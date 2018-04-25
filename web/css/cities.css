@@ -9,8 +9,11 @@ input.citysearch__new-select {
     padding: 0 16px;
     box-shadow: none;
     border-radius: 0;
-    background: #f4f4f4;
     padding-right: 35px;
+}
+
+input.citysearch__new-select.grey-bg {
+    background: #f4f4f4;
 }
 
 input.citysearch__new-select:focus {
@@ -116,11 +119,13 @@ input.citysearch__new-select:focus {
     position: relative;
     z-index: 3;
     border: none;
-    min-height: 66px
+    min-height: 66px;
 }
+
 .easy-autocomplete-container ul li div {
     padding: 8px 1px;
 }
+
 
 .easy-autocomplete-container .citysearch__new-select__country-name {
     font-size: 14px;
@@ -232,22 +237,21 @@ input.citysearch__new-select:focus {
     margin: -2px 0 0 -10px;
 }
 
-.citysearch__new-select__wrapper {
-    width: 100%;
-}
-
 .citysearch__new-select__wrapper.error-select input.citysearch__new-select {
     color: #ff0009;
 }
 
-.nearest-city {
-    color: #898fbd;
+.easy-autocomplete {
+    width: 100%!important;
+}
+.citysearch__new-select__wrapper, .citysearch__new-select__wrapper input {
+    width: 100%;
 }
 
-.nearest-city:hover {
-    text-decoration: underline;
+.citysearch-padding-bottom {
+    margin-bottom: 15px;
 }
 
-.--new-select__city-name {
-    color: black;
+.easy-autocomplete-container, .citysearch__new-select__tooltip-error {
+    z-index: 1999;
 }

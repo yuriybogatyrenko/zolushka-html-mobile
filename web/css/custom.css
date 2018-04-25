@@ -1,0 +1,313 @@
+.more_results {
+    text-align: center;
+}
+
+.exceptions_list_animated_block {
+    min-height: 58px;
+}
+
+.not-allowed-additional-search {
+    text-align: center;
+}
+
+.toggle_calls_settings {
+    margin-top: 25px;
+}
+
+.no-data-available {
+    text-align: center;
+}
+
+.logo_bl .txt_logo .top {
+    font-size: 15px;
+}
+
+.logo_bl .icon_logo {
+    width: 50px !important;
+}
+
+.logo_bl .txt_logo .bot {
+    font-size: 20px !important;
+}
+
+.all_call_table_list .avatar_wrap img {
+    width: 50px;
+    height: 50px;
+}
+
+.popup.text-popup {
+    padding-top: 50px;
+}
+
+.popup_content .red_c.curp {
+    margin-top: 10px;
+}
+
+.site_top_header > .navbar {
+    min-height: 70px;
+}
+
+.is-online {
+    color: #419641;
+}
+
+.text_about_yourself > .text_content_block > p {
+    word-break: break-word;
+}
+
+.error_text {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #f00 !important;
+}
+
+#carousel-profile-photos .carousel-inner > .item {
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.purple-block {
+    color: #fff;
+    background: #AD5FB5;
+    padding: 10px;
+}
+
+.unblock_block {
+    height: 60px;
+    position: relative;
+}
+
+.unblock_block .main_red_btn {
+    position: absolute;
+    left: 80px;
+    top: 15px;
+}
+
+.add_photo_unblock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    z-index: 10;
+    border: 3px dashed #b9bcd6;
+    cursor: pointer;
+    background: url(../../images/viol_phone_icon.png) center center no-repeat, #f8f8fb;
+    background-size: 45px 35px;
+}
+
+#unblock-preview {
+    display: none;
+    height: 100px;
+}
+
+.profile_photo_carousel__profile_page {
+    position: relative;
+}
+
+.profile-carousel__verified-photo {
+    line-height: 40px;
+    padding: 0 10px 0 5px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.photo-verified-carousel {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: -2px;
+}
+
+.girls_grid .item .photos_uploaded {
+    line-height: 30px;
+    padding: 0 8px;
+}
+
+.girls_grid .item .photos_uploaded .icon {
+    font-size: 24px;
+    position: relative;
+    top: -2px;
+    color: #C5CFD5;
+}
+
+.girls_grid .item .photos_uploaded.icon-verified {
+    background: #F1525C;
+}
+
+.girls_grid .item .photos_uploaded .icon:before {
+    margin: 0;
+}
+
+.girls_grid .item .photos_uploaded.photo-verified {
+    background: #F1525C;
+}
+
+.girls_grid .item .photos_uploaded .icon.photo-verified-icon {
+    color: #fff;
+    position: relative;
+}
+
+.photo-verified-gal, .photo-verified-gal-carousel {
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 12px;
+    height: 14px;
+    margin-top: -6px;
+    margin-left: -6px;
+    left: 50%;
+    top: 50%;
+}
+
+.photo-verified-gal:after, .photo-verified-gal-carousel:after {
+    width: 12px;
+    height: 8px;
+    display: block;
+    content: '';
+    border-left: 3px solid #f1525c;
+    border-bottom: 3px solid #f1525c;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -6px;
+    margin-left: -7px;
+}
+
+.photo-verified-gal-carousel:after {
+    border-color: #000;
+}
+
+.photo-verified-gal-carousel {
+    width: 16px;
+    height: 20px;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+li.message_item a {
+    text-decoration: underline;
+}
+
+.profile-carousel__photo-moderation {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    z-index: 20;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.profile-carousel__photo-moderation p {
+    margin-bottom: 0
+}
+
+.profile-carousel__photo-moderation__title {
+    color: #10c899
+}
+
+.icon-photo-on-moderation {
+    background-image: url('../images/icons-sb3a7e97a79.png');
+    background-position: 0 -201px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+    .icon-photo-on-moderation {
+        background-image: url('../images/icons-2x-s3f908e77f3.png');
+        background-size: 23px auto;
+        background-position: 0 -201px;
+        height: 20px;
+        width: 20px
+    }
+}
+
+img.moderation-rejected {
+    margin: 0 auto;
+    margin-right: 5px;
+}
+
+p.moderation-rejected {
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #3f3f3f;
+    margin-top: 4px;
+    margin-bottom: 7px;
+}
+
+.icon-photo-premoderation {
+    background-image: url('../images/icons-sb3a7e97a79.png');
+    background-position: 0 -226px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    top: -1px
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+    .icon-photo-premoderation {
+        background-image: url('../images/icons-2x-s3f908e77f3.png');
+        background-size: 23px auto;
+        background-position: 0 -226px;
+        height: 12px;
+        width: 12px
+    }
+}
+
+.photo-premoderation__title {
+    margin-bottom: 10px
+}
+
+.purple-link {
+    color: #898ebd;
+    text-decoration: none;
+}
+
+.round-green-btn {
+    background: #37d19a;
+    border: none;
+}
+
+.new-email-button {
+    border: none;
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+.round-green-btn.empty {
+    background: #fff;
+    color: #37d19a;
+    border-color: #37d19a;
+}
