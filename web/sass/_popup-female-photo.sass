@@ -1,0 +1,60 @@
+.overlay .popup-wrap .new-female-profile
+	&-drop-file-input
+		height: 166px
+		min-height: 166px
+.new-female-profile
+	&-image-checked
+		background-color: $colorGreenLight
+	&-moderation-absolute
+		position: absolute
+	&-popup
+		background-color: #fff
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+	&--button
+		background-image: linear-gradient(to bottom, #cb83d2, #8b5a8f)
+		border: solid 2px #d8d9d8
+		cursor: pointer
+		transition: all .3s ease
+		&:hover
+			border-color: #999
+
+	&-block-images
+		background-color: $colorGrayLight
+		border-radius: 50%
+		img
+			border-radius: 50%
+
+	&-rules-slider
+		position: relative
+		.owl-dots
+			padding-top: 18px
+			.owl-dot span
+				width: 5px !important
+				height: 5px !important
+		.owl-dots .active span
+			background-color: $colorPurple !important
+		.owl-nav
+			.owl-prev
+				position: absolute
+				left: 111px
+				top: 41px
+				&:hover
+					background-color: transparent !important
+				i
+					font-size: 35px
+					color: $colorPurple
+			.owl-next
+				position: absolute
+				right: 111px
+				top: 41px
+				&:hover
+					background-color: transparent !important
+				i
+					font-size: 35px
+					color: $colorPurple
+		&--slide
+			&-items
+				&-item
+					overflow: hidden
+					&:first-child
+						margin-left: 0
