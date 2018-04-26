@@ -2210,7 +2210,7 @@
   }
 }
 .icon-reg-video {
-  background-image: url('../../sass_images/icon-reg-video.jpg?1524669013');
+  background-image: url('../../sass_images/icon-reg-video.jpg?1524730954');
   background-size: cover;
   height: 146px;
   width: 253px;
@@ -2218,7 +2218,7 @@
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .icon-reg-video {
-    background-image: url('../../sass_images/icon-reg-video@2x.jpg?1524669013');
+    background-image: url('../../sass_images/icon-reg-video@2x.jpg?1524730954');
     background-size: 253px 146px;
   }
 }
