@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" type="text/css"
           href="https://zolushka-project.ru/js/app/bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="web/fonts/icomoon/style.css"/>
     <link rel="stylesheet" href="https://zolushka-project.ru/lib/nanoscroller/nanoscroller.css"/>
     <link rel="stylesheet" href="https://zolushka-project.ru/js/app/bower_components/photoswipe/dist/photoswipe.css">
     <link rel="stylesheet"
@@ -39,58 +40,6 @@
 
 </head>
 <body ng-app="dialogApp" ng-controller="appCtrl as appCtrl">
-
-<header class="site_top_header">
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header dib">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#not_logged_submenu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <a href="/search" class="dib page_title_header vam ffr purple_title">
-                Анкета
-            </a>
-
-        </div>
-    </nav>
-
-    <div class="collapse navbar-collapse" id="not_logged_submenu">
-        <ul class="nav navbar-nav">
-            <li>
-                <div class="container">
-                    <a href="/">Главная</a>
-                </div>
-            </li>
-            <li>
-                <div class="container">
-                    <a href="/search">Поиск</a>
-                </div>
-            </li>
-            <li>
-                <div class="container">
-                    <a href="/about">О проекте</a>
-                </div>
-            </li>
-            <li>
-                <div class="container">
-                    <a href="/blog">Блог</a>
-                </div>
-            </li>
-
-            <li>
-                <div class="container">
-                    <a href="https://play.google.com/store/apps/details?id=com.dornoom.denim_new">Приложение
-                        для
-                        Android</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</header>
 
 <div class="mobile-v">
         <h1> mobile </h1>
@@ -272,45 +221,261 @@
 </noscript>
 <!-- /Yandex.Metrika counter -->
 
-    <div class="mobile-popup fw-absolute fw-left-0 fw-top-0">
-
-        <div class="new-mobile-profile__close-load-popup js-new-profile-close-this-popup-button fw-relative fw-width-1-1 fw-pb-15">
-            <div class="new-profile__close-photo-popup fw-flex fw-flex-right fw-right-0 fw-top-0">
+<div style="display: none;" id="female-main-photo-popup" class="mobile-popup main-photo-popup fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
+        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
         </div>
 
-        <div class="new-mobile-profile-block-images fw-width-131 fw-height-131 fw-relative fw-margin-auto">
-            <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1" alt="">
+        <div class="m-popup-block-image fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+            <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50"
+                 alt="">
 
-            <span class="icomoon icomoon-profile-photo-warning fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
-            <span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+            <span class="icomoon icomoon-profile-moderation-canceled fw-fz-40 fw-absolute fw-bottom-0 fw-right-0">
+            <span class="path1"></span><span class="path2"></span>
+            </span>
         </div>
 
-        <p class="fw-text-center fw-fz-16 fw-mt-30 fw-mb-10 fw-line-height-25">Основное фото не прошло модерацию.</p>
-        <p class="fw-text-center fw-fz-14 fw-mt-30 fw-mb-10 fw-line-height-25">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, autem doloribus earum, nemo pariatur provident quaerat recusandae reiciendis rem sed sequi veritatis vitae, voluptatibus. Dicta dolor, dolore fuga fugit impedit odio porro quasi temporibus? Architecto culpa fugiat, iure reprehenderit repudiandae ullam. Aperiam architecto assumenda cumque deserunt dicta, dolores dolorum fuga fugit hic natus necessitatibus non nulla praesentium quibusdam, quisquam, quos reprehenderit suscipit tenetur? Aliquid architecto cupiditate doloremque doloribus ipsam ipsum laudantium molestias nesciunt sed. Architecto, asperiores at blanditiis consequuntur cum debitis deleniti ex impedit laborum laudantium libero minus nostrum possimus praesentium provident suscipit velit vero voluptas? Inventore nesciunt placeat repellat.
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Основное фото не прошло модерацию. Анкета
+            временно неактивна</p>
+        <p class="fw-text-center fw-fz-14 fw-mt-30 fw-mb-25 fw-line-height-25">
+            Чтобы активировать анкету, добавьте основное фото в соответствии с правилами:
         </p>
 
-        <div class="new-mobile-profile-rules-line fw-mb-20">
-            <p class="fw-text-center fw-fz-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, voluptatem!</p>
-            <div class="fw-flex fw-flex-space-between fw-flex-top">
-                <div class="fw-border-radius-7 fw-width-120"><img src="" class="fw-width-1-1 fw-height-1-1" alt=""></div>
-                <div class="fw-border-radius-7 fw-width-120"><img src="" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">На фото должно быть Ваше лицо</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/true-photo@2x.jpg"
+                                                                  class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false-photo@2x.jpg"
+                                                                           class="fw-width-1-1 fw-height-1-1" alt="">
+                </div>
             </div>
         </div>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid cumque dolore error ipsam laudantium, optio repellendus soluta ut veritatis.
-        </p>
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">На фото должны быть только Вы</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/true2-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false2-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
 
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, veritatis.
-        </p>
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">Без откровенной эротики</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/true3-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false3-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt="">
+                </div>
+            </div>
+        </div>
 
-        <button>добавить основное фото</button>
-
-
+        <p class="fw-fz-14 fw-mb-15 fw-color-gray-light">Так же можете ознакомиться с более подробными <a class="fw-fz-14 fw-color-purple" href="#">правилами</a> размещения фото</p>
+        <p class="fw-fz-14 fw-mb-40 fw-color-gray-light">Администрация вправе отклонить <br> фотографии без объяснения причины</p>
     </div>
-</div></body>
+    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
+</div>
+
+
+
+<div style="display: none;" id="female-photo-main-empty" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
+        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn fw-relative">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+        </div>
+
+        <div class="m-popup-block-image photo-main-empty-img fw-margin-auto fw-width-131 fw-border-radius-percent-50 fw-margin-auto fw-height-131 fw-flex fw-flex-middle fw-flex-center fw-relative">
+            <i class="icomoon icomoon-camera fw-fz-35 fw-color-white"></i>
+
+            <span class="icomoon icomoon-profile-photo-warning fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+            <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+            </span>
+        </div>
+
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Вы не назначили оснонвное фото. Анкета временно неактивна</p>
+        <p class="fw-text-center fw-fz-14 fw-mt-30 fw-mb-25 fw-line-height-25">
+            Чтобы активировать анкету, добавьте основное фото в соответствии с правилами:
+        </p>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">На фото должно быть Ваше лицо</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/true-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">На фото должны быть только Вы</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/true2-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false2-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">Без откровенной эротики</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/true3-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false3-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <p class="fw-fz-14 fw-mb-15 fw-color-gray-light">Так же можете ознакомиться с более подробными <a class="fw-fz-14 fw-color-purple" href="#">правилами</a> размещения фото</p>
+        <p class="fw-fz-14 fw-mb-40 fw-color-gray-light">Администрация вправе отклонить <br> фотографии без объяснения причины</p>
+    </div>
+    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
+</div>
+
+
+
+<div style="display: none;" id="male-photo-main-empty" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
+        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn fw-relative">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+        </div>
+
+        <div class="m-popup-block-image photo-main-empty-img fw-margin-auto fw-width-131 fw-border-radius-percent-50 fw-margin-auto fw-height-131 fw-flex fw-flex-middle fw-flex-center fw-relative">
+            <i class="icomoon icomoon-camera fw-fz-35 fw-color-white"></i>
+
+            <span class="icomoon icomoon-profile-photo-warning fw-absolute fw-right-0 fw-bottom-10 fw-fz-30">
+            <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+            </span>
+        </div>
+
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Вы не назначили оснонвное фото</p>
+        <p class="fw-text-center fw-fz-14 fw-mt-30 fw-mb-25 fw-line-height-25">
+            Основное фото - это ваша визитная карточка. Установите основное фото в соответствии с правилами:
+        </p>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">На фото должно быть Ваше лицо</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/male/m-true-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/false-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">На фото должны быть только Вы</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/male/m-true2-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/male/m-false2-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">Привлекательный внешний вид</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/male/m-true3-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/male/m-false3-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">Без откровенной эротики</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/male/m-true4-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/male/m-false4-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <div class="new-mobile-profile-rules-line fw-mb-25">
+            <p class="fw-text-center fw-fz-14 fw-mb-10 fw-color-gray-light">Без алкоголя и табачных изделий</p>
+            <div class="fw-flex fw-flex-center fw-flex-top">
+                <div class="fw-border-radius-3 fw-width-120"><img src="/web/images/male/m-true5-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+                <div class="fw-border-radius-3 fw-width-120 fw-ml-20"><img src="/web/images/male/m-false5-photo@2x.jpg" class="fw-width-1-1 fw-height-1-1" alt=""></div>
+            </div>
+        </div>
+
+        <p class="fw-fz-14 fw-mb-15 fw-color-gray-light">Так же можете ознакомиться с более подробными <a class="fw-fz-14 fw-color-purple" href="#">правилами</a> размещения фото</p>
+        <p class="fw-fz-14 fw-mb-40 fw-color-gray-light">Администрация вправе отклонить <br> фотографии без объяснения причины</p>
+    </div>
+    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
+</div>
+
+
+
+<div style="display: none;" id="block-female-photo-album-again" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
+        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-62 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn fw-relative">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+        </div>
+
+        <div class="m-popup-block-image fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+            <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+
+            <span class="icomoon icomoon-profile-moderation-canceled fw-fz-40 fw-absolute fw-bottom-0 fw-right-0">
+            <span class="path1"></span><span class="path2"></span>
+            </span>
+        </div>
+
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-110 fw-line-height-25">Фото из альбома повторно не прошло модерацию. Анкета заблокирована</p>
+    </div>
+    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
+</div>
+
+
+
+<div style="display: none;" id="block-female-photo-verification" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
+        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-17 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn fw-relative">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+        </div>
+
+        <div class="m-popup-block-image fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+            <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+
+            <span class="icomoon icomoon-profile-moderation-canceled fw-fz-40 fw-absolute fw-bottom-0 fw-right-0">
+            <span class="path1"></span><span class="path2"></span>
+            </span>
+        </div>
+
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-20 fw-line-height-25">Фото для подтверждение не прошло модерацию</p>
+        <p class="fw-text-center fw-fz-14 fw-mt-10 fw-mb-15 fw-line-height-18">
+            Если, в течении 3 дней, вы не замените фото подтверждения в соответсвии с <a href="#" class="fw-fz-14">правилами</a>, ваша анкета будет отключена от поиска,
+            вы не сможете писать сообщения, принимать звонки и отвечать на рассылки:
+        </p>
+        <p class="fw-fz-14 fw-mb-25 fw-line-height-18 fw-color-gray-light">Осталось 3 попытки</p>
+    </div>
+    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить фото для подтверждения</button>
+</div>
+
+
+
+<div style="display: none;" id="block-female-photo-album" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
+        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-62 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn fw-relative">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+        </div>
+
+        <div class="m-popup-block-image fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+            <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+
+            <span class="icomoon icomoon-profile-moderation-canceled fw-fz-40 fw-absolute fw-bottom-0 fw-right-0">
+            <span class="path1"></span><span class="path2"></span>
+            </span>
+        </div>
+
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Фото из альбома повторно не прошло модерацию</p>
+        <p class="fw-text-center fw-fz-14 fw-mb-74 fw-line-height-18">
+            При повторном добавлении некорректной фотографии, анкета будет заблокирована. Добавляйте
+            фотографии в соответствии с <a href="#" class="fw-fz-14">правилами</a>
+        </p>
+    </div>
+    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
+</div>
+</body>
 </html>

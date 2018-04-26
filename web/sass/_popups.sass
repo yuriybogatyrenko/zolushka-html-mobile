@@ -1,0 +1,36 @@
+.m-purple-btn
+	background-color: $colorBtnPurple
+	border: none
+	outline: none
+	cursor: pointer
+	transition: all .3s ease
+
+.mobile-popup
+	z-index: 20
+	background-color: $colorWhite
+
+.m-close-popup
+	.close-popup-btn
+		width: 20px
+		height: 20px
+		opacity: 1
+		display: block
+		&:hover
+			&:before, &:after
+				background-color: $colorPurple
+		&:before, &:after
+			position: absolute
+			left: 15px
+			transition: all .3s ease
+			content: ' '
+			height: 20px
+			width: 2px
+			background-color: #707070
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+
+
+.photo-main-empty-img
+	background-color: $colorGray
