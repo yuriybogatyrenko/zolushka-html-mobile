@@ -1,14 +1,25 @@
+button
+	cursor: pointer
+	transition: all .3s ease
+	outline: none
 .m-purple-btn
 	background-color: $colorBtnPurple
 	border: none
-	outline: none
-	cursor: pointer
-	transition: all .3s ease
 
-.mobile-popup
-	z-index: 20
+.m-white-btn
 	background-color: $colorWhite
-
+	border: none
+	border-top: 1px solid $colorGray
+	border-bottom: 1px solid $colorGray
+.mobile-popup
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 1000
+	background-color: $colorWhite
+	min-height: 100vh
+	max-height: calc(100vh - 60px)
+	overflow: auto
 .m-close-popup
 	.close-popup-btn
 		width: 20px

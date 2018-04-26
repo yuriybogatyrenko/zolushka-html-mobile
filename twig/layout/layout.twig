@@ -37,13 +37,17 @@
     <link rel="stylesheet" href="https://zolushka-project.ru/m/css/premium-page.css?v=1.0">
     <link rel="stylesheet" href="https://zolushka-project.ru/m/css/premium-page.css?v=1.0">
     <link rel="stylesheet" href="web/css/sass_compiled/style.css?v=1.0">
-
+    <link rel="stylesheet" href="web/css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="web/css/owl/owl.theme.default.css">
 </head>
 <body ng-app="dialogApp" ng-controller="appCtrl as appCtrl">
 
 <div class="mobile-v">
+    {% include '../components/profile-nav.twig' %}
+    {% block profile %}{%endblock%}
     {% block content %}{%endblock%}
 </div>
+
 <!-- Google Tag Manager -->
 <!-- Google Tag Manager -->
 <noscript>
@@ -79,6 +83,7 @@
 <script src="https://zolushka-project.ru/js/jquery.easy-autocomplete.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.0/min/inputmask/inputmask.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.0/min/inputmask/jquery.inputmask.min.js"></script>
+
 <script>
     $(document).bind('mobileinit', function () {
         var silentScroll = $.mobile.silentScroll;
@@ -174,7 +179,7 @@
 <script src="https://zolushka-project.ru/m/js/app.min.js?v=2.0"></script>
 <script src="https://zolushka-project.ru/lib/jquery.smartbanner-master/jquery.smartbanner.js"></script>
 
-
+<script src="web/js/owl.carousel.min.js"></script>
 <script>
     $('#main-search-form, #search-filter-form').on('submit', function (e) {
         if ($('select[name="type"]', $(this)).val() == "1") {
@@ -215,10 +220,13 @@
         }
     })(document, window, "yandex_metrika_callbacks");
 </script>
+
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/31915413" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
+
 {% include '../components/popups.twig' %}
+
 </body>
 </html>

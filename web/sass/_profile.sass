@@ -1,0 +1,60 @@
+
+.m-gray-bg
+	background-color: #f7f7f7
+
+
+.m-red-button
+	border: none
+	outline: none
+	border-radius: 20px
+	background-color: $colorRedLight
+
+.m-profile
+	&-empty-photo-wrap
+		border-bottom: 1px solid #e7e7e7
+
+
+.m-profile-top-line
+	.m-profile-avatar
+		.m-load-avatar-input
+			display: none
+
+#slider-load-img-input
+	display: none
+.load-field-label
+	border: 1px solid #e7e7e7
+	.icomoon-photo-plus
+		transform: translate(3px,2px)
+
+.drop-field-label
+	cursor: pointer
+	border: 1px solid $colorRed
+	.icomoon-photo-plus
+		transform: translate(3px,2px)
+	*
+		pointer-events: none
+
+.m-profile-album
+	&-slider
+		.owl-nav
+			background-color: transparent !important
+			i
+				font-size: 16px
+				color: $colorPurple
+			.owl-prev
+				display: none !important
+			.owl-next
+				position: absolute
+				right: 0px
+				top: -29px
+				transform: translateY(-50%)
+				display: flex !important
+				align-items: center !important
+				color: $colorPurple !important
+
+				&:hover
+					background-color: transparent !important
+		&--slide
+			overflow: hidden
+			&:first-child
+				margin-left: 0

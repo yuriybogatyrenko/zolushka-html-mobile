@@ -53,7 +53,7 @@
         <p class="fw-fz-14 fw-mb-15 fw-color-gray-light">Так же можете ознакомиться с более подробными <a class="fw-fz-14 fw-color-purple" href="#">правилами</a> размещения фото</p>
         <p class="fw-fz-14 fw-mb-40 fw-color-gray-light">Администрация вправе отклонить <br> фотографии без объяснения причины</p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
+    <button class="fw-width-1-1 fw-relative m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
 </div>
 {# End #}
 
@@ -198,7 +198,7 @@
 
         <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-110 fw-line-height-25">Фото из альбома повторно не прошло модерацию. Анкета заблокирована</p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
+    <button class="fw-width-1-1 fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
 </div>
 {# End #}
 
@@ -226,20 +226,15 @@
         </p>
         <p class="fw-fz-14 fw-mb-25 fw-line-height-18 fw-color-gray-light">Осталось 3 попытки</p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить фото для подтверждения</button>
+    <button class="fw-width-1-1 fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить фото для подтверждения</button>
 </div>
 {# End #}
 
 {# Block up female-photo album/ Female #}
 <div style="display: none;" id="block-female-photo-album" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
     <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
-        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-62 fw-pt-17 fw-flex fw-flex-right">
-            <div class="close-popup-btn fw-relative">
-                <span class="new-profile__close--close-load fw-relative"></span>
-            </div>
-        </div>
 
-        <div class="m-popup-block-image fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+        <div class="m-popup-block-image fw-margin-auto fw-mt-65 fw-width-131 fw-height-131 fw-relative">
             <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
 
             <span class="icomoon icomoon-profile-moderation-canceled fw-fz-40 fw-absolute fw-bottom-0 fw-right-0">
@@ -247,12 +242,24 @@
             </span>
         </div>
 
-        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Фото из альбома повторно не прошло модерацию</p>
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Фото из альбома не прошло модерацию</p>
         <p class="fw-text-center fw-fz-14 fw-mb-74 fw-line-height-18">
             При повторном добавлении некорректной фотографии, анкета будет заблокирована. Добавляйте
-            фотографии в соответствии с <a href="#" class="fw-fz-14">правилами</a>
+            фотографии в соответствии с <a href="#" class="fw-fz-14 fw-color-purple">правилами</a>
         </p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
+    <button class="fw-width-1-1 fw-absolute fw-bottom-0 m-white-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-purple">Разблокировать за 250₽</button>
 </div>
 {# End #}
+
+<script>
+    $('.m-profile-album-slider').owlCarousel({
+        items: 3,
+        slideBy: 3,
+        loop: true,
+        nav: true,
+        dots: false,
+        dotsEach: false,
+        navText: ['', '3 фото <i class="icomoon icomoon-cheveron-right">\n' + ' \n' + ' </i>']
+    });
+</script>

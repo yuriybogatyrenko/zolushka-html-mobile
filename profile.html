@@ -37,13 +37,117 @@
     <link rel="stylesheet" href="https://zolushka-project.ru/m/css/premium-page.css?v=1.0">
     <link rel="stylesheet" href="https://zolushka-project.ru/m/css/premium-page.css?v=1.0">
     <link rel="stylesheet" href="web/css/sass_compiled/style.css?v=1.0">
-
+    <link rel="stylesheet" href="web/css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="web/css/owl/owl.theme.default.css">
 </head>
 <body ng-app="dialogApp" ng-controller="appCtrl as appCtrl">
 
 <div class="mobile-v">
-    
+    <header class="site_top_header">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header dib">
+                <button type="button" class="navbar-toggle collapsed" data-call-popup="#profile_submenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a href="/" class="dib page_title_header vam ffr purple_title">
+                Анкета
+            </a>
+
+            <div class="dib r_bl right_add_menu"><a href="/messages#!#dialogs" class="icon mail_icon_menu icon-mail"><span class="msg_number unread-messages" style="display: none;">0</span></a></div>
+        </div>
+    </nav>
+
+</header>    <div class="m-profile profile-female-status-photo-main-empty">
+    <div class="fw-padding-15">
+        <div class="m-profile-top-line fw-flex fw-flex-center fw-flex-left">
+            <div class="m-profile-avatar">
+                <label class="drop-field-label fw-border-radius-percent-50 fw-width-80 fw-height-80 fw-relative fw-flex fw-flex-center fw-flex-middle">
+                    <span class="icomoon icomoon-photo-plus fw-fz-30 fw-color-red"></span>
+                    <input class="m-load-avatar-input" type="file" accept="image/*">
+                    <span class="loader"></span>
+                </label>
+            </div>
+
+            <div class="m-profile-titles fw-pl-15">
+                <h3 class="m-profile-name fw-fz-20 fw-line-height-25 fw-mb-2">Анастасия, 18</h3>
+                <span class="m-profile-city fw-block fw-fz-14 fw-line-height-18 fw-color-gray-light">Москва, Россия</span>
+            </div>
+        </div>
+
+        <div class="m-profile-album fw-pt-15">
+            <span class="m-profile-album-title fw-block fw-pb-15 fw-fz-14 fw-line-height-18 fw-color-gray-light">Фотоальбом</span>
+
+            <div class="m-profile-album-slider owl-carousel owl-theme fw-flex">
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <label class="load-field-label fw-border-radius-3 fw-width-1-1 fw-height-1-1 fw-relative fw-flex fw-flex-center fw-flex-middle">
+                        <span class="icomoon icomoon-photo-plus fw-fz-30 fw-color-purple"></span>
+                        <input id="slider-load-img-input" class="m-load-avatar-input" type="file" accept="image/*">
+                        <span class="loader"></span>
+                    </label>
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fw-pt-20 fw-pr-15 m-gray-bg fw-pl-15 fw-pb-86 fw-text-center">
+        <div class="m-profile-empty-photo-wrap fw-pb-20">
+            <div class="icon-wrap fw-margin-auto">
+                <span class="icomoon icomoon-profile-photo-warning fw-fz-26">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                </span>
+            </div>
+
+            <p class="fw-mt-10 fw-mb-5 fw-fz-16 ">Отсутствует основное фото</p>
+            <p class="fw-mb-20 fw-fz-14 fw-color-gray-light">Добавьте основное фото, чтобы активировать анкету</p>
+
+            <button class="m-red-button fw-width-1-1 fw-pt-12 fw-pb-12 fw-color-white fw-fz-14">Добавить основное фото</button>
+        </div>
+
+        <div class="m-profile-statistics fw-flex fw-flex-space-around fw-flex-top fw-mt-15">
+            <div class="m-profile-statistics--item fw-text-center">
+                <span class="m-profile-statistics--item-title fw-block fw-fz-14 fw-color-gray-light">Баланс</span>
+                <span class="m-profile-statistics--item-value fw-block fw-fz-16 fw-mt-3">20 000 Р</span>
+            </div>
+
+            <div class="m-profile-statistics--item fw-text-center">
+                <span class="m-profile-statistics--item-title fw-block fw-fz-14 fw-color-gray-light">Место в поиске</span>
+                <span class="m-profile-statistics--item-value fw-block fw-fz-16 fw-mt-3">26756</span>
+            </div>
+
+            <div class="m-profile-statistics--item fw-text-center">
+                <span class="m-profile-statistics--item-title fw-block fw-fz-14 fw-color-gray-light">Подарки</span>
+                <span class="m-profile-statistics--item-value fw-block fw-fz-16 fw-mt-3">3</span>
+            </div>
+        </div>
+    </div>
 </div>
+    </div>
+
 <!-- Google Tag Manager -->
 <!-- Google Tag Manager -->
 <noscript>
@@ -79,6 +183,7 @@
 <script src="https://zolushka-project.ru/js/jquery.easy-autocomplete.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.0/min/inputmask/inputmask.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.0/min/inputmask/jquery.inputmask.min.js"></script>
+
 <script>
     $(document).bind('mobileinit', function () {
         var silentScroll = $.mobile.silentScroll;
@@ -174,7 +279,7 @@
 <script src="https://zolushka-project.ru/m/js/app.min.js?v=2.0"></script>
 <script src="https://zolushka-project.ru/lib/jquery.smartbanner-master/jquery.smartbanner.js"></script>
 
-
+<script src="web/js/owl.carousel.min.js"></script>
 <script>
     $('#main-search-form, #search-filter-form').on('submit', function (e) {
         if ($('select[name="type"]', $(this)).val() == "1") {
@@ -215,10 +320,12 @@
         }
     })(document, window, "yandex_metrika_callbacks");
 </script>
+
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/31915413" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
+
 
 <div style="display: none;" id="female-main-photo-popup" class="mobile-popup main-photo-popup fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
     <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
@@ -274,7 +381,7 @@
         <p class="fw-fz-14 fw-mb-15 fw-color-gray-light">Так же можете ознакомиться с более подробными <a class="fw-fz-14 fw-color-purple" href="#">правилами</a> размещения фото</p>
         <p class="fw-fz-14 fw-mb-40 fw-color-gray-light">Администрация вправе отклонить <br> фотографии без объяснения причины</p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
+    <button class="fw-width-1-1 fw-relative m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
 </div>
 
 
@@ -419,7 +526,7 @@
 
         <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-110 fw-line-height-25">Фото из альбома повторно не прошло модерацию. Анкета заблокирована</p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
+    <button class="fw-width-1-1 fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
 </div>
 
 
@@ -447,20 +554,15 @@
         </p>
         <p class="fw-fz-14 fw-mb-25 fw-line-height-18 fw-color-gray-light">Осталось 3 попытки</p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить фото для подтверждения</button>
+    <button class="fw-width-1-1 fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить фото для подтверждения</button>
 </div>
 
 
 
 <div style="display: none;" id="block-female-photo-album" class="mobile-popup photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
     <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
-        <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-62 fw-pt-17 fw-flex fw-flex-right">
-            <div class="close-popup-btn fw-relative">
-                <span class="new-profile__close--close-load fw-relative"></span>
-            </div>
-        </div>
 
-        <div class="m-popup-block-image fw-margin-auto fw-width-131 fw-height-131 fw-relative">
+        <div class="m-popup-block-image fw-margin-auto fw-mt-65 fw-width-131 fw-height-131 fw-relative">
             <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
 
             <span class="icomoon icomoon-profile-moderation-canceled fw-fz-40 fw-absolute fw-bottom-0 fw-right-0">
@@ -468,13 +570,27 @@
             </span>
         </div>
 
-        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Фото из альбома повторно не прошло модерацию</p>
+        <p class="fw-text-center fw-fz-20 fw-mt-20 fw-mb-10 fw-line-height-25">Фото из альбома не прошло модерацию</p>
         <p class="fw-text-center fw-fz-14 fw-mb-74 fw-line-height-18">
             При повторном добавлении некорректной фотографии, анкета будет заблокирована. Добавляйте
-            фотографии в соответствии с <a href="#" class="fw-fz-14">правилами</a>
+            фотографии в соответствии с <a href="#" class="fw-fz-14 fw-color-purple">правилами</a>
         </p>
     </div>
-    <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Разблокировать за 250₽</button>
+    <button class="fw-width-1-1 fw-absolute fw-bottom-0 m-white-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-purple">Разблокировать за 250₽</button>
 </div>
+
+
+<script>
+    $('.m-profile-album-slider').owlCarousel({
+        items: 3,
+        slideBy: 3,
+        loop: true,
+        nav: true,
+        dots: false,
+        dotsEach: false,
+        navText: ['', '3 фото <i class="icomoon icomoon-cheveron-right">\n' + ' \n' + ' </i>']
+    });
+</script>
+
 </body>
 </html>
