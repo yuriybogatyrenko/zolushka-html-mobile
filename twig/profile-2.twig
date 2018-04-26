@@ -1,0 +1,84 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-profile profile-female-status-photo-main-empty">
+    <div class="fw-padding-15">
+        <div class="m-profile-top-line fw-flex fw-flex-center fw-flex-left">
+            <div class="m-profile-avatar fw-width-80 fw-height-80 fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+                <div class="blur-overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50"></div>
+
+            </div>
+
+            <div class="m-profile-titles fw-pl-15">
+                <h3 class="m-profile-name fw-fz-20 fw-line-height-25 fw-mb-2">Александр, 24</h3>
+                <span class="m-profile-city fw-block fw-fz-14 fw-line-height-18 fw-color-gray-light">Москва, Россия</span>
+            </div>
+        </div>
+
+        <div class="m-profile-album fw-pt-15">
+            <span class="m-profile-album-title fw-block fw-pb-15 fw-fz-14 fw-line-height-18 fw-color-gray-light">Фотоальбом</span>
+
+            <div class="m-profile-album-slider owl-carousel owl-theme fw-flex">
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <label class="load-field-label fw-border-radius-3 fw-width-1-1 fw-height-1-1 fw-relative fw-flex fw-flex-center fw-flex-middle">
+                        <span class="icomoon icomoon-photo-plus fw-fz-30 fw-color-purple"></span>
+                        <input id="slider-load-img-input" class="m-load-avatar-input" type="file" accept="image/*">
+                        <span class="loader"></span>
+                    </label>
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+
+                <div class="m-profile-album-slider--slide fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
+                    <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fw-pt-20 fw-pr-15 m-gray-bg fw-pl-15 fw-pb-86 fw-text-center">
+        <div class="m-profile-empty-photo-wrap fw-pb-20">
+
+            <p class="fw-mb-20 fw-fz-14 fw-color-gray-light">Пробный аккаунт, осталось:</p>
+            <p class="fw-mt-10 fw-mb-5 fw-fz-16 ">30 минут</p>
+
+            <button class="m-red-button fw-width-1-1 fw-pt-12 fw-pb-12 fw-color-white fw-fz-14">Подключить премиум</button>
+        </div>
+
+        <div class="m-profile-statistics fw-flex fw-flex-space-around fw-flex-top fw-mt-15">
+            <div class="m-profile-statistics--item fw-text-center">
+                <span class="m-profile-statistics--item-title fw-block fw-fz-14 fw-color-gray-light">Баланс</span>
+                <span class="m-profile-statistics--item-value fw-block fw-fz-16 fw-mt-3">20 000 Р</span>
+            </div>
+
+            <div class="m-profile-statistics--item fw-text-center">
+                <span class="m-profile-statistics--item-title fw-block fw-fz-14 fw-color-gray-light">Место в поиске</span>
+                <span class="m-profile-statistics--item-value fw-block fw-fz-16 fw-mt-3">26756</span>
+            </div>
+
+            <div class="m-profile-statistics--item fw-text-center">
+                <span class="m-profile-statistics--item-title fw-block fw-fz-14 fw-color-gray-light">Подарки</span>
+                <span class="m-profile-statistics--item-value fw-block fw-fz-16 fw-mt-3">3</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
