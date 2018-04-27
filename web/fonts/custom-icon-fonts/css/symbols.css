@@ -35,3 +35,33 @@
                 }
 
 .s-icon-active:before { content: "\EA01" }
+.s-icon-add:before { content: "\EA02" }
+.s-icon-camera-add:before { content: "\EA03" }
+.s-icon-camera:before { content: "\EA04" }
+.s-icon-cancel:before { content: "\EA05" }
+.s-icon-check:before { content: "\EA06" }
+.s-icon-cheveron-right:before { content: "\EA07" }
+.s-icon-chevron-left:before { content: "\EA08" }
+.s-icon-chevron-right:before { content: "\EA09" }
+.s-icon-combined-shape:before { content: "\EA0A" }
+.s-icon-cross:before { content: "\EA0B" }
+.s-icon-crown:before { content: "\EA0C" }
+.s-icon-edit-pencil:before { content: "\EA0D" }
+.s-icon-heart:before { content: "\EA0E" }
+.s-icon-invisible-hat:before { content: "\EA0F" }
+.s-icon-messages:before { content: "\EA10" }
+.s-icon-pad-lock:before { content: "\EA11" }
+.s-icon-phone:before { content: "\EA12" }
+.s-icon-phone2:before { content: "\EA13" }
+.s-icon-photo-plus:before { content: "\EA14" }
+.s-icon-photo:before { content: "\EA15" }
+.s-icon-profile-moderation-canceled:before { content: "\EA16" }
+.s-icon-profile-moderation-pending:before { content: "\EA17" }
+.s-icon-profile-photo-warning:before { content: "\EA18" }
+.s-icon-search:before { content: "\EA19" }
+.s-icon-trash:before { content: "\EA1A" }
+.s-icon-trial-account:before { content: "\EA1B" }
+.s-icon-undo:before { content: "\EA1C" }
+.s-icon-views:before { content: "\EA1D" }
+.s-icon-writing-message:before { content: "\EA1E" }
+.s-icon-zoom-in:before { content: "\EA1F" }

@@ -273,6 +273,14 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 90px;
 }
 
+.fw-width-94 {
+  width: 94px;
+}
+
+.fw-max-width-94 {
+  max-width: 94px;
+}
+
 .fw-width-106 {
   width: 106px;
 }
@@ -295,6 +303,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-max-width-131 {
   max-width: 131px;
+}
+
+.fw-width-140 {
+  width: 140px;
+}
+
+.fw-max-width-140 {
+  max-width: 140px;
+}
+
+.fw-width-270 {
+  width: 270px;
+}
+
+.fw-max-width-270 {
+  max-width: 270px;
 }
 
 .fw-width-454 {
@@ -475,6 +499,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-min-height-120 {
   min-height: 120px;
+}
+
+.fw-height-140 {
+  height: 140px;
+}
+
+.fw-max-height-140 {
+  max-height: 140px;
+}
+
+.fw-min-height-140 {
+  min-height: 140px;
 }
 
 .fw-height-166 {
@@ -1220,6 +1256,26 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-pr-20 {
   padding-right: 20px;
+}
+
+.fw-padding-25 {
+  padding: 25px;
+}
+
+.fw-pt-25 {
+  padding-top: 25px;
+}
+
+.fw-pb-25 {
+  padding-bottom: 25px;
+}
+
+.fw-pl-25 {
+  padding-left: 25px;
+}
+
+.fw-pr-25 {
+  padding-right: 25px;
 }
 
 .fw-padding-28 {
@@ -2063,6 +2119,10 @@ input[type=number]::-webkit-outer-spin-button {
   top: 10px;
 }
 
+.fw-top-13 {
+  top: 13px;
+}
+
 .fw-top-20 {
   top: 20px;
 }
@@ -2073,6 +2133,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-bottom-0 {
   bottom: 0px;
+}
+
+.fw-bottom-5 {
+  bottom: 5px;
 }
 
 .fw-bottom-7 {
@@ -2111,8 +2175,16 @@ input[type=number]::-webkit-outer-spin-button {
   right: 0px;
 }
 
+.fw-right-5 {
+  right: 5px;
+}
+
 .fw-right-7 {
   right: 7px;
+}
+
+.fw-right-10 {
+  right: 10px;
 }
 
 .fw-right-13 {
@@ -2191,6 +2263,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
+  border: none;
 }
 
 .m-purple-btn {
@@ -2243,6 +2316,26 @@ button {
 
 .photo-main-empty-img {
   background-color: #d8d9d8;
+}
+
+.profile-male-photo-main-delete {
+  background-color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.block-male-photo-main-change-buttons {
+  overflow: hidden;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d8d9d8;
 }
 
 .m-gray-bg {
@@ -2313,6 +2406,48 @@ button {
 }
 .m-profile-album-slider--slide:first-child {
   margin-left: 0;
+}
+
+.m-profile-text-status {
+  cursor: pointer;
+  border: solid 1px #e7e7e7;
+}
+
+.m-sliders-profile .section_block_separator .block_title {
+  background-color: #fff;
+  margin-bottom: 0;
+  text-align: left;
+  padding-left: 15px;
+  color: #ba78c0;
+}
+.m-sliders-profile .section_block_separator .hidden_block.with_bg .block_content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.m-sliders-profile .section_block_separator {
+  padding: 0;
+  width: 100%;
+}
+
+.m-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blur-overlay {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.m-album-page {
+  margin-left: -10px;
+}
+
+.m-album-item {
+  width: 30%;
+}
+.m-album-item .icomoon-profile-moderation-pending {
+  display: block;
 }
 
 body {

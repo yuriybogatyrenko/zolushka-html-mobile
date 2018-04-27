@@ -162,6 +162,14 @@
   max-width: 90px;
 }
 
+.fw-width-94 {
+  width: 94px;
+}
+
+.fw-max-width-94 {
+  max-width: 94px;
+}
+
 .fw-width-106 {
   width: 106px;
 }
@@ -184,6 +192,22 @@
 
 .fw-max-width-131 {
   max-width: 131px;
+}
+
+.fw-width-140 {
+  width: 140px;
+}
+
+.fw-max-width-140 {
+  max-width: 140px;
+}
+
+.fw-width-270 {
+  width: 270px;
+}
+
+.fw-max-width-270 {
+  max-width: 270px;
 }
 
 .fw-width-454 {
@@ -364,6 +388,18 @@
 
 .fw-min-height-120 {
   min-height: 120px;
+}
+
+.fw-height-140 {
+  height: 140px;
+}
+
+.fw-max-height-140 {
+  max-height: 140px;
+}
+
+.fw-min-height-140 {
+  min-height: 140px;
 }
 
 .fw-height-166 {
@@ -1109,6 +1145,26 @@
 
 .fw-pr-20 {
   padding-right: 20px;
+}
+
+.fw-padding-25 {
+  padding: 25px;
+}
+
+.fw-pt-25 {
+  padding-top: 25px;
+}
+
+.fw-pb-25 {
+  padding-bottom: 25px;
+}
+
+.fw-pl-25 {
+  padding-left: 25px;
+}
+
+.fw-pr-25 {
+  padding-right: 25px;
 }
 
 .fw-padding-28 {
@@ -1952,6 +2008,10 @@
   top: 10px;
 }
 
+.fw-top-13 {
+  top: 13px;
+}
+
 .fw-top-20 {
   top: 20px;
 }
@@ -1962,6 +2022,10 @@
 
 .fw-bottom-0 {
   bottom: 0px;
+}
+
+.fw-bottom-5 {
+  bottom: 5px;
 }
 
 .fw-bottom-7 {
@@ -2000,8 +2064,16 @@
   right: 0px;
 }
 
+.fw-right-5 {
+  right: 5px;
+}
+
 .fw-right-7 {
   right: 7px;
+}
+
+.fw-right-10 {
+  right: 10px;
 }
 
 .fw-right-13 {
@@ -2926,6 +2998,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
+  border: none;
 }
 
 .m-purple-btn {
@@ -2978,6 +3051,26 @@ button {
 
 .photo-main-empty-img {
   background-color: #d8d9d8;
+}
+
+.profile-male-photo-main-delete {
+  background-color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.block-male-photo-main-change-buttons {
+  overflow: hidden;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d8d9d8;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?2yctmd');
-  src:  url('fonts/icomoon.eot?2yctmd#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2yctmd') format('truetype'),
-    url('fonts/icomoon.woff?2yctmd') format('woff'),
-    url('fonts/icomoon.svg?2yctmd#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bpd0cx');
+  src:  url('fonts/icomoon.eot?bpd0cx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bpd0cx') format('truetype'),
+    url('fonts/icomoon.woff?bpd0cx') format('woff'),
+    url('fonts/icomoon.svg?bpd0cx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,11 +27,14 @@
 .icomoon-cheveron-right:before {
   content: "\e918";
 }
+.icomoon-female-status-email:before {
+  content: "\e919";
+}
+.icomoon-trial-account:before {
+  content: "\e90d";
+}
 .icomoon-photo-plus:before {
   content: "\e917";
-}
-.icomoon-more-dots:before {
-  content: "\e90d";
 }
 .icomoon-profile-moderation-canceled .path1:before {
   content: "\e90b";
