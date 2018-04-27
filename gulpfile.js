@@ -12,6 +12,8 @@ var gulp = require('gulp'),                        // Gulp
     path = require('path'),  						// Path
     twig = require('gulp-twig'),
     browserSync = require('browser-sync'),
+    iconfont = require('gulp-iconfont'),
+    consolidate = require('gulp-consolidate'),
     plumber = require('gulp-plumber');  			// Path
 
 gulp.task('css', function () {
@@ -336,6 +338,67 @@ gulp.task('browser-sync', function () {
         server: "./"
     });
 });
+
+gulp.task('symbols', () => {
+    const fontName = 'symbols'; // set name of your symbol font
+    const className = 's-icon'; // set class name in your CSS
+    const template = 'fontawesome-style'; // or 'foundation-style'
+    const runTimestamp = Math.round(Date.now() / 1000);
+    gulp
+        .src(['web/fonts/custom-icon-fonts/svg/*.svg'])
+        .pipe(iconfont({
+            fontName,
+            formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+            runTimestamp,
+            log: () => {
+            } // suppress unnecessary logging
+        }))
+        .on('glyphs', (glyphs) => {
+            const options = {
+                className,
+                fontName,
+                fontPath: '../fonts/', // set path to font (from your CSS file if relative)
+                glyphs: glyphs.map(mapGlyphs)
+            };
+
+            gulp.src(`web/fonts/custom-icon-fonts/sample/${template}.css`)
+                .pipe(consolidate('lodash', options))
+                .pipe(rename({basename: fontName}))
+                .pipe(gulp.dest('web/fonts/custom-icon-fonts/css')); // set path to export your CSS
+
+            // if you don't need sample.html, remove next 4 lines
+            gulp.src(`web/fonts/custom-icon-fonts/sample/${template}.html`)
+                .pipe(consolidate('lodash', options))
+                .pipe(rename({basename: 'sample'}))
+                .pipe(gulp.dest('web/fonts/custom-icon-fonts/demo')) // set path to export your sample HTML
+        })
+        .pipe(gulp.dest('web/fonts/custom-icon-fonts/fonts')) // set path to export your fonts
+});
+
+/*gulp.task('watch', ['symbols'], () => {
+    bs.init({
+        files: 'dist/sample.html',
+        server: 'dist/',
+        startPath: '/sample.html',
+        middleware: cacheControl
+    })
+    gulp.watch('*.sketch', ['symbols'])
+})*/
+
+/**
+ * This is needed for mapping glyphs and codepoints.
+ */
+function mapGlyphs(glyph) {
+    return {name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0)}
+}
+
+/**
+ * This keeps browser from caching fonts for your testing environment
+ */
+function cacheControl(req, res, next) {
+    res.setHeader('Cache-control', 'no-store')
+    next()
+}
 
 // watch
 gulp.task('watch', function () {
