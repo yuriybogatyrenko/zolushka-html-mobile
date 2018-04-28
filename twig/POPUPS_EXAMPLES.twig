@@ -1,6 +1,46 @@
 {% extends 'layout/layout.twig' %}
 
 {% block content %}
-    <h1> mobile </h1>
+    <h1>Женский профиль</h1> <br><br>
+
+    <span>Основное фото не прошло модерацию. Анкета временно неактивна</span> <br><br>
+    <button data-call-popup="#female-main-photo-popup">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Вы не назначили оснонвное фото. Анкета временно неактивна</span> <br><br>
+    <button data-call-popup="#female-photo-main-empty">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Фото из альбома повторно не прошло модерацию. Анкета заблокирована</span> <br><br>
+    <button data-call-popup="#block-female-photo-album-again">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Фото для подтверждение не прошло модерацию</span> <br><br>
+    <button data-call-popup="#block-female-photo-verification">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Фото из альбома не прошло модерацию</span> <br><br>
+    <button data-call-popup="#block-female-photo-album">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Удалить основное фото?</span> <br><br>
+    <button data-call-popup="#profile-male-photo-main-delete">открыть</button>
+    <br><br> <hr> <br><br>
+
+
+
+    <h1>Мужской профиль</h1> <br><br>
+    <span>Вы не назначили оснонвное фото. Анкета временно неактивна</span> <br><br>
+    <button data-call-popup="#male-photo-main-empty">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Выбрыть фото</span> <br><br>
+    <button data-call-popup="#block-male-photo-main-change">открыть</button>
+    <br><br> <hr> <br><br>
+
+    <span>Добавить фото</span> <br><br>
+    <button data-call-popup="#m-popup-profile-male-photo-add">открыть</button>
+    <br><br> <hr> <br><br>
+
 
 {% endblock %}

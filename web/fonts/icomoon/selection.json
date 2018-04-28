@@ -4,6 +4,61 @@
     {
       "icon": {
         "paths": [
+          "M51.2 512l276.48-368.64c18.88-24.983 48.534-40.96 81.92-40.96v0h716.8c56.554 0 102.4 45.846 102.4 102.4v0 614.4c0 56.554-45.846 102.4-102.4 102.4v0h-716.8c-33.386 0-63.040-15.977-81.733-40.702l-0.187-0.258-276.48-368.64z",
+          "M409.6 396.902c0-77.875 64.205-140.902 143.565-140.902s143.565 62.976 143.565 140.902c0 77.926-64.205 140.954-143.565 140.954s-143.565-63.334-143.565-140.954zM931.635 775.014c-79.36 0-143.565-62.976-143.565-140.902s64.205-140.954 143.565-140.954c79.36 0 143.565 62.976 143.565 140.954 0 77.875-64.205 140.902-143.565 140.902zM580.915 760.422c-6.566 7.65-16.246 12.466-27.052 12.466-8.476 0-16.26-2.963-22.372-7.911l0.067 0.052c-7.736-6.292-12.638-15.811-12.638-26.474 0-8.392 3.036-16.075 8.070-22.011l-0.041 0.049 376.678-445.44c6.564-7.618 16.225-12.412 27.005-12.412 8.474 0 16.256 2.962 22.368 7.907l-0.067-0.052c14.848 12.032 16.896 33.792 4.659 48.384l-376.73 445.44zM553.472 455.373c32.87 0 59.494-26.163 59.494-58.47 0-32.256-26.624-58.368-59.494-58.368s-59.546 26.112-59.546 58.368c0 32.256 26.624 58.47 59.546 58.47zM931.635 692.531c32.87 0 59.546-26.163 59.546-58.419s-26.624-58.47-59.546-58.47c-32.87 0-59.546 26.163-59.546 58.47 0 32.256 26.624 58.368 59.546 58.368z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(242, 83, 92)"
+          },
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "width": 1280,
+        "isMulticolor": true,
+        "isMulticolor2": false,
+        "grid": 20,
+        "tags": [
+          "m-sale"
+        ],
+        "colorPermutations": {
+          "242839212552552551": [
+            {
+              "f": 0
+            },
+            {
+              "f": 1
+            }
+          ]
+        }
+      },
+      "attrs": [
+        {
+          "fill": "rgb(242, 83, 92)"
+        },
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 70,
+        "id": 1,
+        "name": "m-sale",
+        "prevSize": 20,
+        "code": 59675,
+        "codes": [
+          59675,
+          59676
+        ]
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M663.040 548.198l36.198-36.198-289.638-289.638-72.397 72.397 217.19 217.242-217.19 217.242 72.397 72.397 253.44-253.44z"
         ],
         "attrs": [
@@ -28,6 +83,32 @@
       },
       "setIdx": 0,
       "setId": 4,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M691.2 410.368l324.147-205.568-144.947 460.8h-716.8l-144.947-460.8 324.147 205.568 179.2-359.168 179.2 359.168zM153.6 742.4h716.8v128h-716.8v-128z"
+        ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "premium-account"
+        ],
+        "colorPermutations": {}
+      },
+      "attrs": [],
+      "properties": {
+        "order": 65,
+        "id": 23,
+        "name": "premium-account",
+        "prevSize": 32,
+        "code": 59674
+      },
+      "setIdx": 1,
+      "setId": 3,
       "iconIdx": 0
     },
     {
@@ -54,7 +135,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 0
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -68,9 +149,7 @@
         "tags": [
           "trial-account"
         ],
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        }
+        "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
@@ -82,7 +161,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 1
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -97,9 +176,7 @@
         "tags": [
           "combined-shape (1)"
         ],
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        }
+        "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
@@ -111,7 +188,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 2
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -136,14 +213,6 @@
             },
             {
               "f": 2
-            }
-          ],
-          "15615615611729417912550012552552551721712551": [
-            {
-              "f": 0
-            },
-            {
-              "f": 4
             }
           ]
         },
@@ -173,7 +242,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 8
+      "iconIdx": 10
     },
     {
       "icon": {
@@ -184,9 +253,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "padlock-2"
         ],
@@ -202,7 +269,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 9
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -212,9 +279,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "writing-message"
         ],
@@ -230,7 +295,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 10
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -241,9 +306,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "Shape"
         ],
@@ -259,7 +322,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 11
+      "iconIdx": 13
     },
     {
       "icon": {
@@ -291,17 +354,6 @@
             },
             {
               "f": 1
-            }
-          ],
-          "15615615611729417912550012552552551721712551": [
-            {
-              "f": 0
-            },
-            {
-              "f": 4
-            },
-            {
-              "f": 4
             }
           ]
         },
@@ -335,7 +387,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 12
+      "iconIdx": 14
     },
     {
       "icon": {
@@ -347,9 +399,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "camera"
         ],
@@ -365,7 +415,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 13
+      "iconIdx": 15
     },
     {
       "icon": {
@@ -376,9 +426,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "edit-icon"
         ],
@@ -394,7 +442,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 14
+      "iconIdx": 16
     },
     {
       "icon": {
@@ -406,9 +454,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "group-12"
         ],
@@ -424,7 +470,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 15
+      "iconIdx": 17
     },
     {
       "icon": {
@@ -436,9 +482,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "icon"
         ],
@@ -454,7 +498,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 16
+      "iconIdx": 18
     },
     {
       "icon": {
@@ -466,9 +510,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "messages-quanity"
         ],
@@ -484,7 +526,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 17
+      "iconIdx": 19
     },
     {
       "icon": {
@@ -506,14 +548,6 @@
           "1281281281186120192125510911712552552551721712551": [
             {
               "f": 2
-            },
-            {
-              "f": 4
-            }
-          ],
-          "15615615611729417912550012552552551721712551": [
-            {
-              "f": 3
             },
             {
               "f": 4
@@ -546,7 +580,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 18
+      "iconIdx": 20
     },
     {
       "icon": {
@@ -556,9 +590,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "search-place"
         ],
@@ -574,7 +606,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 19
+      "iconIdx": 21
     },
     {
       "icon": {
@@ -585,9 +617,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "shape"
         ],
@@ -603,7 +633,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 20
+      "iconIdx": 22
     },
     {
       "icon": {
@@ -614,9 +644,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "colorPermutations": {
-          "15615615611729417912550012552552551721712551": []
-        },
+        "colorPermutations": {},
         "tags": [
           "views"
         ],
@@ -632,7 +660,7 @@
       },
       "setIdx": 1,
       "setId": 3,
-      "iconIdx": 21
+      "iconIdx": 23
     },
     {
       "icon": {

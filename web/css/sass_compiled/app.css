@@ -63,11 +63,11 @@
 }
 
 .fw-bg-color-blue {
-  background-color: #48abff;
+  background-color: #007aff;
 }
 
 .fw-color-blue {
-  color: #48abff;
+  color: #007aff;
 }
 
 .fw-bg-color-gray {
@@ -144,6 +144,14 @@
 
 .fw-max-width-40 {
   max-width: 40px;
+}
+
+.fw-width-70 {
+  width: 70px;
+}
+
+.fw-max-width-70 {
+  max-width: 70px;
 }
 
 .fw-width-80 {
@@ -340,6 +348,18 @@
 
 .fw-min-height-40 {
   min-height: 40px;
+}
+
+.fw-height-70 {
+  height: 70px;
+}
+
+.fw-max-height-70 {
+  max-height: 70px;
+}
+
+.fw-min-height-70 {
+  min-height: 70px;
 }
 
 .fw-height-80 {
@@ -569,6 +589,46 @@
 
 .fw-mr-5 {
   margin-right: 5px;
+}
+
+.fw-margin-7 {
+  margin: 7px;
+}
+
+.fw-mt-7 {
+  margin-top: 7px;
+}
+
+.fw-mb-7 {
+  margin-bottom: 7px;
+}
+
+.fw-ml-7 {
+  margin-left: 7px;
+}
+
+.fw-mr-7 {
+  margin-right: 7px;
+}
+
+.fw-margin-8 {
+  margin: 8px;
+}
+
+.fw-mt-8 {
+  margin-top: 8px;
+}
+
+.fw-mb-8 {
+  margin-bottom: 8px;
+}
+
+.fw-ml-8 {
+  margin-left: 8px;
+}
+
+.fw-mr-8 {
+  margin-right: 8px;
 }
 
 .fw-margin-9 {
@@ -1541,6 +1601,10 @@
   font-size: 46px;
 }
 
+.fw-fz-49 {
+  font-size: 49px;
+}
+
 .fw-fz-50 {
   font-size: 50px;
 }
@@ -1762,7 +1826,7 @@
 }
 
 .fw-border-color-blue {
-  border-color: #48abff;
+  border-color: #007aff;
 }
 
 .fw-border-color-gray {
@@ -3071,6 +3135,26 @@ button {
 
 .border-bottom {
   border-bottom: 1px solid #d8d9d8;
+}
+
+.m-popup-profile-male-photo-add {
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile-male-photo-add-buttons {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.block-male-photo-main-delete-buttons {
+  overflow: hidden;
+}
+
+.profile-male-photo-add-cancel-button {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /*# sourceMappingURL=app.css.map */

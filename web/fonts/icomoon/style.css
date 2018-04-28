@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?bpd0cx');
-  src:  url('fonts/icomoon.eot?bpd0cx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?bpd0cx') format('truetype'),
-    url('fonts/icomoon.woff?bpd0cx') format('woff'),
-    url('fonts/icomoon.svg?bpd0cx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9fy3an');
+  src:  url('fonts/icomoon.eot?9fy3an#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9fy3an') format('truetype'),
+    url('fonts/icomoon.woff?9fy3an') format('woff'),
+    url('fonts/icomoon.svg?9fy3an#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-m-sale .path1:before {
+  content: "\e91b";
+  color: rgb(242, 83, 92);
+}
+.icomoon-m-sale .path2:before {
+  content: "\e91c";
+  margin-left: -1.25em;
+  color: rgb(255, 255, 255);
+}
 .icomoon-cheveron-right:before {
   content: "\e918";
+}
+.icomoon-premium-account:before {
+  content: "\e91a";
 }
 .icomoon-female-status-email:before {
   content: "\e919";
