@@ -1,27 +1,24 @@
 {% extends 'layout/layout.twig' %}
 
 {% block album %}
-<div style="display: block;" class="m-profile profile-female-status-photo-main-empty">
+
     <div class="m-container">
-        {# Main photo empty / Male #}
-        <div style="display: block;" id="male-photo-main-empty" class=" fw-relative fw-width-1-1">
-            <div class="m-popup-content fw-text-center">
-                <h3 class="fw-fz-20 fw-line-height-25 fw-pt-10">Подтвердите фото</h3>
-                <p class="fw-margin-o fw-pt-10 fw-fz-14 fw-pb-25 fw-pr-15 fw-pl-15">Напишите ваш ID на бумаге и сделайте фото с ним, как показано на примере:</p>
-                <div class="m-popup-block-image photo-main-empty-img fw-margin-auto fw-width-140 fw-border-radius-percent-50 fw-margin-auto fw-height-140 fw-flex fw-flex-middle fw-flex-center fw-relative">
-                    <img src="http://placehold.it/200x200" class="fw-border-radius-percent-50" alt="">
-                </div>
+        <div class="m-popup-content m-100vh fw-relative fw-text-center fw-relative">
+            <h3 class="fw-fz-20 fw-line-height-25 fw-pt-10">Подтвердите фото</h3>
+            <p class="fw-margin-o fw-pt-10 fw-fz-14 fw-pb-25 fw-pr-15 fw-pl-15">Напишите ваш ID на бумаге и сделайте
+                фото с ним, как показано на примере:</p>
+            <div class="m-popup-block-image photo-main-empty-img fw-margin-auto fw-width-140 fw-border-radius-percent-50 fw-margin-auto fw-height-140 fw-flex fw-flex-middle fw-flex-center fw-relative">
+                <img src="http://placehold.it/200x200" class="fw-border-radius-percent-50" alt="">
+            </div>
 
-                <p class="fw-text-center fw-fz-12 fw-mt-20 fw-mb-10 fw-line-height-25 fw-color-gray-light">Ваш ID</p>
-                <b class="fw-text-center fw-fz-30 fw-mt-30 fw-mb-25 fw-line-height-25 fw-pb-15">245503</b>
-                <p class="fw-fz-12 fw-mb-40 fw-line-height-18 fw-color-gray-light fw-pr-15 fw-pl-15">Фотография нужна только для подтверждения, мы не будем ее публиковать</p>
+            <p class="fw-text-center fw-fz-12 fw-mt-20 fw-mb-10 fw-line-height-25 fw-color-gray-light">Ваш ID</p>
+            <b class="fw-text-center fw-fz-30 fw-mt-30 fw-mb-25 fw-line-height-25 fw-pb-15">245503</b>
+            <p class="fw-fz-12 fw-mb-40 fw-line-height-18 fw-color-gray-light fw-pr-15 fw-pl-15">Фотография нужна только для подтверждения, мы не будем ее публиковать</p>
 
-
-            <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">Добавить основное фото</button>
+            <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white fw-absolute fw-bottom-0 fw-left-0">Добавить основное фото</button>
         </div>
-        {# End #}
     </div>
-</div>
+
 {% endblock %}
 
 

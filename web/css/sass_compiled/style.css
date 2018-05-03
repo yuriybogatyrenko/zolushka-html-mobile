@@ -2520,6 +2520,25 @@ button {
   background-color: #fff;
 }
 
+.m-100vh {
+  height: 100vh;
+  max-height: calc(100vh - 80px);
+}
+
+.m-validate-phone-form {
+  height: 100vh;
+  max-height: calc(100vh - 125px);
+}
+
+#set-phone-block .bootstrap-select .btn {
+  background-color: #fff;
+  border-radius: 3px 0px 0px 3px;
+}
+#set-phone-block .form-line .m-new-validate-phone {
+  border-left: none;
+  border-radius: 0px 3px 3px 0px;
+}
+
 .m-profile-text-status {
   cursor: pointer;
   border: solid 1px #e7e7e7;
