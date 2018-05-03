@@ -1,0 +1,101 @@
+{% extends 'layout/layout.twig' %}
+
+{% block album %}
+    <form action="#" method="post" class="m-profile-data fw-width-1-1 ">
+        <div class="m-container fw-pl-15 fw-pr-15">
+            <h3 class="fw-fz-20 fw-line-height-25 fw-pt-10 fw-text-left fw-pb-15">Заполните данные анкеты</h3>
+
+            <div class="m-input-line-wrap">
+                <label class="fw-fz-14 fw-color-gray-light fw-mb-20" for="about-me">Приветственное сообщение <span class="fw-color-gray-light fw-fz-14"><span id="chars">0</span> / 500</span></label>
+                <textarea id="about-me" maxlength="500"
+                          placeholder="Раскажите что-нибудь о себе или какие отношения предпочтитаете"
+                          class="m-input-style fw-width-1-1 fw-color-gray-light fw-fz-14"
+                ></textarea>
+
+                <div class="select_wrap fw-mt-10">
+                    <select name="client[sexualKind][]" class="selectpicker  gray_select_style display_block" multiple>
+                        <option value="" selected disabled>Цели знакомства</option>
+                        <option value="1">Стану спонсором</option>
+                        <option value="2">Постоянные отношения</option>
+                        <option value="3">Провести вечер</option>
+                        <option value="4">Совместные путешествия</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="m-input-line-wrap fw-pt-10">
+                <span class="fw-fz-14 fw-color-gray-light fw-pb-20 fw-block">Внешность</span>
+                <div class="m-input-line fw-flex">
+                    <input type="text" placeholder="Рост" class="m-input-style">
+                    <input type="text" placeholder="Вес" class="m-input-style fw-ml-10">
+                </div>
+            </div>
+
+            <div class="m-input-line-wrap fw-pt-10">
+                <div class="select_wrap">
+                    <select name="client[physique]" class="selectpicker gray_select_style display_block">
+                        <option selected disabled>Телосложение</option>
+                        <option value="21">Худощавый</option>
+                        <option value="22">Стандартный</option>
+                        <option value="23">Спортивный</option>
+                        <option value="24">Мускулистый</option>
+                        <option value="25">Плотный</option>
+                        <option value="26">Полный</option>
+                    </select>
+                </div>
+
+                <div class="select_wrap">
+                    <select name="client[appearance]" class="selectpicker gray_select_style display_block">
+                        <option selected disabled>Внешность</option>
+                        <option value="3">Европейская</option>
+                        <option value="4">Азиатская</option>
+                        <option value="5">Кавказская</option>
+                        <option value="6">Индийская</option>
+                        <option value="7">Испанская</option>
+                        <option value="8">Ближневосточная</option>
+                        <option value="9">Американская</option>
+                        <option value="10">Смешанная</option>
+                        <option value="11">Темнокожая</option>
+                    </select>
+                </div>
+
+                <div class="select_wrap">
+                    <select name="client[sexualKind][]" class="selectpicker  gray_select_style display_block" multiple>
+                        <option value="" selected disabled>Размер груди</option>
+                        <option value="54">1</option>
+                        <option value="55">2</option>
+                        <option value="56">3</option>
+                        <option value="57">4</option>
+                        <option value="58">5</option>
+                    </select>
+                </div>
+
+                <div class="select_wrap">
+                    <select name="client[hairColor]" class="selectpicker gray_select_style display_block">
+                        <option value="" selected disabled>Цвет волос</option>
+                        <option value="13">Блондин</option>
+                        <option value="14">Брюнет</option>
+                        <option value="15">Рыжий</option>
+                        <option value="16">Черный</option>
+                    </select>
+                </div>
+
+                <div class="select_wrap">
+                    <select name="client[eyeColor]" class="selectpicker gray_select_style display_block">
+                        <option value="" selected disabled>Цвет глаз</option>
+                        <option value="16">Карие</option>
+                        <option value="17">Зеленые</option>
+                        <option value="18">Голубые</option>
+                        <option value="19">Серые</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="fw-width-1-1 m-purple-btn fw-mt-25 fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white">
+            Продолжить
+        </button>
+    </form>
+
+{% endblock %}
+

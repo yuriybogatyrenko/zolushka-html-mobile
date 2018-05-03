@@ -614,6 +614,13 @@
     $('.js-m-btn-close-pop').on('click',function () {
         $('.mobile-popup').hide();
     });
+
+    var maxLength = 500;
+    $('textarea').keyup(function() {
+        var length = $(this).val().length;
+        var length = length;
+        $('#chars').text(length);
+    });
 </script>
 
 </body>

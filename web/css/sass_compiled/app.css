@@ -1067,6 +1067,26 @@
   padding-right: 8px;
 }
 
+.fw-padding-9 {
+  padding: 9px;
+}
+
+.fw-pt-9 {
+  padding-top: 9px;
+}
+
+.fw-pb-9 {
+  padding-bottom: 9px;
+}
+
+.fw-pl-9 {
+  padding-left: 9px;
+}
+
+.fw-pr-9 {
+  padding-right: 9px;
+}
+
 .fw-padding-10 {
   padding: 10px;
 }
@@ -3155,6 +3175,10 @@ button {
   overflow: hidden;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.m-overflow-hidden {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=app.css.map */
