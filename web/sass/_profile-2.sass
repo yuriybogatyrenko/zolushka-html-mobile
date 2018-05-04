@@ -17,19 +17,31 @@
 		width: 100%
 
 .m-container
-	max-width: 700px
+	max-width: 575px
 	margin: 0 auto
 
 .blur-overlay
-	filter: blur(5px)
-	-webkit-filter: blur(5px)
+	filter: blur(1px)
+	-webkit-filter: blur(1px)
 
 @function pxtovw($px)
 	@return ((100/1440)*$px)+vw
 
 .m-album-page
 	margin-left: -10px
+.m-album-border
+	border-bottom: 1px solid #000
 .m-album-item
 	width: 30.7333%
 	.icomoon-profile-moderation-pending
 		display: block
+
+.m-minus-album-img
+	background-color: $colorRed
+	top: -6px
+	left: -7px
+	i
+		cursor: pointer
+.white-overlay
+	background-color: rgba(#fff,.5)
+	z-index: 2

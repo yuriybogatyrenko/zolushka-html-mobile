@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9fy3an');
-  src:  url('fonts/icomoon.eot?9fy3an#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9fy3an') format('truetype'),
-    url('fonts/icomoon.woff?9fy3an') format('woff'),
-    url('fonts/icomoon.svg?9fy3an#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?z8c8j8');
+  src:  url('fonts/icomoon.eot?z8c8j8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z8c8j8') format('truetype'),
+    url('fonts/icomoon.woff?z8c8j8') format('woff'),
+    url('fonts/icomoon.svg?z8c8j8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-minus:before {
+  content: "\e91f";
+}
+.icomoon-add:before {
+  content: "\e911";
+  color: #fff;
+}
+.icomoon-phone:before {
+  content: "\e913";
+  color: #fff;
+}
+.icomoon-undo:before {
+  content: "\e910";
+}
+.icomoon-left:before {
+  content: "\e910";
+}
+.icomoon-arrow-left:before {
+  content: "\e910";
+}
+.icomoon-zoom-in:before {
+  content: "\e987";
+}
+.icomoon-heart:before {
+  content: "\e9da";
+}
+.icomoon-cancel:before {
+  content: "\ea0d";
+}
+.icomoon-cross:before {
+  content: "\ea0f";
+}
+.icomoon-mask:before {
+  content: "\e91d";
+}
+.icomoon-delete:before {
+  content: "\e91e";
+}
 .icomoon-m-sale .path1:before {
   content: "\e91b";
   color: rgb(242, 83, 92);
@@ -121,35 +159,6 @@
 }
 .icomoon-chevron-left:before {
   content: "\e914";
-}
-.icomoon-add:before {
-  content: "\e911";
-  color: #fff;
-}
-.icomoon-phone:before {
-  content: "\e913";
-  color: #fff;
-}
-.icomoon-undo:before {
-  content: "\e910";
-}
-.icomoon-left:before {
-  content: "\e910";
-}
-.icomoon-arrow-left:before {
-  content: "\e910";
-}
-.icomoon-zoom-in:before {
-  content: "\e987";
-}
-.icomoon-heart:before {
-  content: "\e9da";
-}
-.icomoon-cancel:before {
-  content: "\ea0d";
-}
-.icomoon-cross:before {
-  content: "\ea0f";
 }
 .icomoon-phone2:before {
   content: "\e912";

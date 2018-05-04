@@ -77,3 +77,61 @@ button
 
 .m-overflow-hidden
 	overflow: hidden
+.m-white-bg
+	background-color: rgba(255, 255, 255, 0.3)
+.m-bg-black-overlay
+	background-color: #000
+
+.m-border-25
+	border-radius: 25px
+.m-male-photo-album
+	.album-view-slide-buttons
+		bottom: -33px
+		a
+			&:hover
+				color: $colorWhite
+	.m-close-popup
+		.close-popup-btn
+			width: 20px
+			height: 20px
+			opacity: 1
+			display: block
+			&:hover
+				&:before, &:after
+					background-color: $colorPurple
+			&:before, &:after
+				position: absolute
+				left: 15px
+				transition: all .3s ease
+				content: ' '
+				height: 20px
+				width: 2px
+				background-color: #fff
+
+	.owl-carousel .owl-stage-outer
+		overflow: unset !important
+
+.m-male-photo-album-view-slider
+	.m-male-photo-album-view-slider-slide
+		outline: none
+#m-slide-counter
+	left: 50%
+	transform: translateX(-50%)
+
+.blur-overlay-album-photo-moderation
+	-webkit-filter: blur(1px)
+	filter: blur(1px)
+.m-moderation-info
+	z-index: 2
+
+.m-male-photo-album-edit-slider
+	.slide
+		&:hover
+			border: 2px solid $colorPurple
+			img
+				border: 2px solid #000000
+
+.m-profile-photo-edit-buttons
+	button
+		border: none
+		background: transparent

@@ -241,6 +241,14 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 0px;
 }
 
+.fw-width-22 {
+  width: 22px;
+}
+
+.fw-max-width-22 {
+  max-width: 22px;
+}
+
 .fw-width-24 {
   width: 24px;
 }
@@ -255,6 +263,30 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-max-width-40 {
   max-width: 40px;
+}
+
+.fw-width-45 {
+  width: 45px;
+}
+
+.fw-max-width-45 {
+  max-width: 45px;
+}
+
+.fw-width-53 {
+  width: 53px;
+}
+
+.fw-max-width-53 {
+  max-width: 53px;
+}
+
+.fw-width-60 {
+  width: 60px;
+}
+
+.fw-max-width-60 {
+  max-width: 60px;
 }
 
 .fw-width-70 {
@@ -319,6 +351,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-max-width-140 {
   max-width: 140px;
+}
+
+.fw-width-180 {
+  width: 180px;
+}
+
+.fw-max-width-180 {
+  max-width: 180px;
 }
 
 .fw-width-270 {
@@ -437,6 +477,18 @@ input[type=number]::-webkit-outer-spin-button {
   min-height: 20px;
 }
 
+.fw-height-22 {
+  height: 22px;
+}
+
+.fw-max-height-22 {
+  max-height: 22px;
+}
+
+.fw-min-height-22 {
+  min-height: 22px;
+}
+
 .fw-height-24 {
   height: 24px;
 }
@@ -459,6 +511,42 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-min-height-40 {
   min-height: 40px;
+}
+
+.fw-height-45 {
+  height: 45px;
+}
+
+.fw-max-height-45 {
+  max-height: 45px;
+}
+
+.fw-min-height-45 {
+  min-height: 45px;
+}
+
+.fw-height-53 {
+  height: 53px;
+}
+
+.fw-max-height-53 {
+  max-height: 53px;
+}
+
+.fw-min-height-53 {
+  min-height: 53px;
+}
+
+.fw-height-60 {
+  height: 60px;
+}
+
+.fw-max-height-60 {
+  max-height: 60px;
+}
+
+.fw-min-height-60 {
+  min-height: 60px;
 }
 
 .fw-height-70 {
@@ -555,6 +643,30 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-min-height-131 {
   min-height: 131px;
+}
+
+.fw-height-460 {
+  height: 460px;
+}
+
+.fw-max-height-460 {
+  max-height: 460px;
+}
+
+.fw-min-height-460 {
+  min-height: 460px;
+}
+
+.fw-height-520 {
+  height: 520px;
+}
+
+.fw-max-height-520 {
+  max-height: 520px;
+}
+
+.fw-min-height-520 {
+  min-height: 520px;
 }
 
 .fw-grid {
@@ -1080,6 +1192,26 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-mr-74 {
   margin-right: 74px;
+}
+
+.fw-margin-80 {
+  margin: 80px;
+}
+
+.fw-mt-80 {
+  margin-top: 80px;
+}
+
+.fw-mb-80 {
+  margin-bottom: 80px;
+}
+
+.fw-ml-80 {
+  margin-left: 80px;
+}
+
+.fw-mr-80 {
+  margin-right: 80px;
 }
 
 .fw-margin-110 {
@@ -2231,6 +2363,10 @@ input[type=number]::-webkit-outer-spin-button {
   bottom: 10px;
 }
 
+.fw-bottom-15 {
+  bottom: 15px;
+}
+
 .fw-bottom-28 {
   bottom: 28px;
 }
@@ -2444,6 +2580,76 @@ button {
 
 .m-overflow-hidden {
   overflow: hidden;
+}
+
+.m-white-bg {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.m-bg-black-overlay {
+  background-color: #000;
+}
+
+.m-border-25 {
+  border-radius: 25px;
+}
+
+.m-male-photo-album .album-view-slide-buttons {
+  bottom: -33px;
+}
+.m-male-photo-album .album-view-slide-buttons a:hover {
+  color: #fff;
+}
+.m-male-photo-album .m-close-popup .close-popup-btn {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  display: block;
+}
+.m-male-photo-album .m-close-popup .close-popup-btn:hover:before, .m-male-photo-album .m-close-popup .close-popup-btn:hover:after {
+  background-color: #ba78c0;
+}
+.m-male-photo-album .m-close-popup .close-popup-btn:before, .m-male-photo-album .m-close-popup .close-popup-btn:after {
+  position: absolute;
+  left: 15px;
+  transition: all 0.3s ease;
+  content: " ";
+  height: 20px;
+  width: 2px;
+  background-color: #fff;
+}
+.m-male-photo-album .owl-carousel .owl-stage-outer {
+  overflow: unset !important;
+}
+
+.m-male-photo-album-view-slider .m-male-photo-album-view-slider-slide {
+  outline: none;
+}
+
+#m-slide-counter {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blur-overlay-album-photo-moderation {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.m-moderation-info {
+  z-index: 2;
+}
+
+.m-male-photo-album-edit-slider .slide:hover {
+  border: 2px solid #ba78c0;
+}
+.m-male-photo-album-edit-slider .slide:hover img {
+  border: 2px solid #000000;
+}
+
+.m-profile-photo-edit-buttons button {
+  border: none;
+  background: transparent;
 }
 
 .m-gray-bg {
@@ -2729,17 +2935,21 @@ button {
 }
 
 .m-container {
-  max-width: 700px;
+  max-width: 575px;
   margin: 0 auto;
 }
 
 .blur-overlay {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 
 .m-album-page {
   margin-left: -10px;
+}
+
+.m-album-border {
+  border-bottom: 1px solid #000;
 }
 
 .m-album-item {
@@ -2747,6 +2957,20 @@ button {
 }
 .m-album-item .icomoon-profile-moderation-pending {
   display: block;
+}
+
+.m-minus-album-img {
+  background-color: #f2535c;
+  top: -6px;
+  left: -7px;
+}
+.m-minus-album-img i {
+  cursor: pointer;
+}
+
+.white-overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
 }
 
 body {
