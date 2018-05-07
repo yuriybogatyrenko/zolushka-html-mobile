@@ -829,6 +829,17 @@
             connectWith: ".m-album-page"
         }).disableSelection();
     });
+
+//    profile text status
+    $(".js-m-open-textarea").on("click", function () {
+        $('.js-m-textarea-status-form ').addClass('js-m-textarea-status-form--active')
+    });
+
+    $(".js-m-textarea-status-save").on("click", function () {
+        $('.js-m-textarea-status-form ').removeClass('js-m-textarea-status-form--active')
+    });
+
+
 </script>
 
 </body>

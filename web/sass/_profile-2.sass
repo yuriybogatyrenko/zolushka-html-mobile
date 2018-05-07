@@ -45,3 +45,18 @@
 .white-overlay
 	background-color: rgba(#fff,.5)
 	z-index: 2
+
+.m-textarea-status-form
+	display: none
+	background: $colorGray
+	textarea::-webkit-input-placeholder
+		color: $colorGrayLight !important
+	textarea::-moz-placeholder
+		color: $colorGrayLight !important
+	textarea:-moz-placeholder
+		color: $colorGrayLight !important
+	textarea:-ms-input-placeholder
+		color: $colorGrayLight !important
+
+.js-m-textarea-status-form--active
+	display: block

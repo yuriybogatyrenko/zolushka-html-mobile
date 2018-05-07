@@ -2973,6 +2973,27 @@ button {
   z-index: 2;
 }
 
+.m-textarea-status-form {
+  display: none;
+  background: #d8d9d8;
+}
+.m-textarea-status-form textarea::-webkit-input-placeholder {
+  color: #999 !important;
+}
+.m-textarea-status-form textarea::-moz-placeholder {
+  color: #999 !important;
+}
+.m-textarea-status-form textarea:-moz-placeholder {
+  color: #999 !important;
+}
+.m-textarea-status-form textarea:-ms-input-placeholder {
+  color: #999 !important;
+}
+
+.js-m-textarea-status-form--active {
+  display: block;
+}
+
 body {
   font-family: "TruthCYR";
   font-size: 14px;

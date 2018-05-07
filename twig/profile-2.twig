@@ -88,7 +88,16 @@
 
             <div class="m-profile-text-status fw-relative bg-white fw-height-94 fw-width-1-1 fw-border-radius-3 fw-flex fw-flex-center fw-flex-middle fw-padding-20 fw-mt-25">
                 <p class="fw-fz-14 fw-margin-0 fw-pt-40 fw-pb-40 fw-border-radius-3">Всем привет)</p>
-                <i class=" fw-color-red icon-pencil fw-fz-18 fw-absolute fw-top-13 fw-right-10"></i>
+                <i class="js-m-open-textarea fw-color-red icon-pencil fw-fz-18 fw-absolute fw-top-13 fw-right-10"></i>
+
+                <form method="post" action="/ajax/profile" class="js-m-textarea-status-form m-textarea-status-form fw-absolute fw-width-1-1 fw-height-1-1">
+                    <textarea name="client[aboutMe]" placeholder="Тут будет текст о Вас, напишите здесь самое главное. 2-3 предложения будет достаточно."></textarea>
+                    <div class="">
+                        <a href="#" class="js-m-textarea-status-save m-red-button fw-block fw-mt-10 fw-color-white fw-padding-5">
+                            Сохранить
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
 
