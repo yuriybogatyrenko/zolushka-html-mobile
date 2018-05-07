@@ -2652,6 +2652,10 @@ button {
   background: transparent;
 }
 
+.m-hide {
+  display: none !important;
+}
+
 .m-gray-bg {
   background-color: #f7f7f7;
 }
