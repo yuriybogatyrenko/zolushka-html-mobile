@@ -470,25 +470,31 @@
         }
     });
 
-
+    // open popup
     $('button').on('click', function () {
         var dataPopup = $(this).attr('data-call-popup');
         $(dataPopup).show();
     });
 
+    // hide popup
     $('.js-m-btn-close-pop').on('click',function () {
         $('.mobile-popup').hide();
     });
 
-    var maxLength = 500;
-    $('textarea').keyup(function() {
-        var length = $(this).val().length;
-        var length = length;
-        $('#chars').text(length);
+    // chars counter
+    $( function() {
+        var maxLength = 500;
+        $('textarea').keyup(function() {
+            var length = $(this).val().length;
+            var length = length;
+            $('#chars').text(length);
+        });
     });
 
-    $( function() {
-        $(".m-album-page").sortable();
-        $(".m-album-page").disableSelection();
-    } );
+    // sortable blocks
+    $(function() {
+        $("#m-top-droppable, #m-bottom-droppable").sortable({
+            connectWith: ".m-album-page"
+        }).disableSelection();
+    });
 </script>
