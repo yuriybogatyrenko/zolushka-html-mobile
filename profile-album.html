@@ -730,6 +730,27 @@
 
 
 <script>
+
+    // m-mailing z-index list
+    $(function () {
+        var list = $('.js-mailing-z-index-list li');
+
+        for(i = 0; i < list.length; i ++){
+            var zIndex = 0;
+            $(list[i]).css({'z-index' : + zIndex + i });
+        }
+    });
+
+    $('.js-mailing-slider').owlCarousel({
+        items: 3,
+        slideBy: 1,
+        loop: true,
+        nav: true,
+        dots: false,
+        dotsEach: false,
+        navText: ['', '<span class="fw-fz-14 fw-color-purple2 fw-flex fw-flex-middle"> 23 <i class="icomoon fw-ml-3 fw-mb-2 fw-fz-19 icomoon-cheveron-right">\n' + ' \n' + ' </i> </span>']
+    });
+
     $('.m-profile-album-slider').owlCarousel({
         items: 3,
         slideBy: 3,

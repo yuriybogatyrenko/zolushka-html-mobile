@@ -133,6 +133,38 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
 }
 
+.fw-bg-color-blue-light {
+  background-color: #48abff;
+}
+
+.fw-color-blue-light {
+  color: #48abff;
+}
+
+.fw-bg-color-purple2 {
+  background-color: #ac5eb3;
+}
+
+.fw-color-purple2 {
+  color: #ac5eb3;
+}
+
+.fw-bg-color-gray3 {
+  background-color: #f7f7f7;
+}
+
+.fw-color-gray3 {
+  color: #f7f7f7;
+}
+
+.fw-bg-color-gray2 {
+  background-color: #eeeeee;
+}
+
+.fw-color-gray2 {
+  color: #eeeeee;
+}
+
 .fw-bg-color-red {
   background-color: #f2535c;
 }
@@ -257,6 +289,14 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 24px;
 }
 
+.fw-width-30 {
+  width: 30px;
+}
+
+.fw-max-width-30 {
+  max-width: 30px;
+}
+
 .fw-width-40 {
   width: 40px;
 }
@@ -279,6 +319,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-max-width-53 {
   max-width: 53px;
+}
+
+.fw-width-56 {
+  width: 56px;
+}
+
+.fw-max-width-56 {
+  max-width: 56px;
 }
 
 .fw-width-60 {
@@ -319,6 +367,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-max-width-94 {
   max-width: 94px;
+}
+
+.fw-width-100 {
+  width: 100px;
+}
+
+.fw-max-width-100 {
+  max-width: 100px;
 }
 
 .fw-width-106 {
@@ -499,6 +555,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-min-height-24 {
   min-height: 24px;
+}
+
+.fw-height-30 {
+  height: 30px;
+}
+
+.fw-max-height-30 {
+  max-height: 30px;
+}
+
+.fw-min-height-30 {
+  min-height: 30px;
 }
 
 .fw-height-40 {
@@ -1270,6 +1338,26 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 0px;
 }
 
+.fw-padding-2 {
+  padding: 2px;
+}
+
+.fw-pt-2 {
+  padding-top: 2px;
+}
+
+.fw-pb-2 {
+  padding-bottom: 2px;
+}
+
+.fw-pl-2 {
+  padding-left: 2px;
+}
+
+.fw-pr-2 {
+  padding-right: 2px;
+}
+
 .fw-padding-5 {
   padding: 5px;
 }
@@ -1690,6 +1778,26 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 86px;
 }
 
+.fw-padding-90 {
+  padding: 90px;
+}
+
+.fw-pt-90 {
+  padding-top: 90px;
+}
+
+.fw-pb-90 {
+  padding-bottom: 90px;
+}
+
+.fw-pl-90 {
+  padding-left: 90px;
+}
+
+.fw-pr-90 {
+  padding-right: 90px;
+}
+
 .fw-flex {
   display: flex;
 }
@@ -1870,6 +1978,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-fz-50 {
   font-size: 50px;
+}
+
+.fw-fz-52 {
+  font-size: 52px;
+}
+
+.fw-fz-63 {
+  font-size: 63px;
 }
 
 .fw-line-height-18 {
@@ -2066,6 +2182,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-border-radius-percent-60 {
   border-radius: 60%;
+}
+
+.fw-border-color-blue-light {
+  border-color: #48abff;
+}
+
+.fw-border-color-purple2 {
+  border-color: #ac5eb3;
+}
+
+.fw-border-color-gray3 {
+  border-color: #f7f7f7;
+}
+
+.fw-border-color-gray2 {
+  border-color: #eeeeee;
 }
 
 .fw-border-color-red {
@@ -3006,6 +3138,79 @@ button {
 
 .js-m-textarea-status-form--active {
   display: block;
+}
+
+.mailing-purple-hover {
+  transition: all 0.3s;
+  border: solid 1px #e6e6e6;
+}
+.mailing-purple-hover:hover {
+  background-color: #ba78c0;
+  border: solid 1px #ba78c0;
+  color: #fff;
+}
+
+.mailing-block-border-top-bottom {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.fw-white-btn-border {
+  border: solid 2px #d8d9d8;
+}
+
+.m-mailing-100vh-gray {
+  height: 100vh;
+  max-height: calc(100vh - 60px);
+}
+
+.fw-pointer {
+  cursor: pointer;
+}
+
+.fw-white-border-2px {
+  border: 2px solid #fff;
+}
+
+.m-mailing-main-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.m-mailing-main-wrapper .m-mailing-tags {
+  margin-left: -15px;
+}
+.m-mailing-main-wrapper .mailing-slider-slide-img {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 auto;
+}
+.m-mailing-main-wrapper .mailing-slider .owl-nav {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start;
+}
+.m-mailing-main-wrapper .m-mailing-archive--item:nth-child(n + 3) {
+  border-top: none;
+}
+.m-mailing-main-wrapper .mailing-z-index-list li {
+  position: absolute;
+  left: 0;
+}
+.m-mailing-main-wrapper .mailing-z-index-list li:nth-child(n + 4) {
+  display: none;
+}
+.m-mailing-main-wrapper .mailing-z-index-list li:nth-child(2) {
+  left: 15px;
+}
+.m-mailing-main-wrapper .mailing-z-index-list li:nth-child(3) {
+  left: calc(2 * 15px);
+}
+.m-mailing-main-wrapper .mailing-z-index-list li:nth-child(0) {
+  left: 0;
 }
 
 body {

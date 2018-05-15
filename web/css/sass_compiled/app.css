@@ -22,6 +22,38 @@
   display: block;
 }
 
+.fw-bg-color-blue-light {
+  background-color: #48abff;
+}
+
+.fw-color-blue-light {
+  color: #48abff;
+}
+
+.fw-bg-color-purple2 {
+  background-color: #ac5eb3;
+}
+
+.fw-color-purple2 {
+  color: #ac5eb3;
+}
+
+.fw-bg-color-gray3 {
+  background-color: #f7f7f7;
+}
+
+.fw-color-gray3 {
+  color: #f7f7f7;
+}
+
+.fw-bg-color-gray2 {
+  background-color: #eeeeee;
+}
+
+.fw-color-gray2 {
+  color: #eeeeee;
+}
+
 .fw-bg-color-red {
   background-color: #f2535c;
 }
@@ -146,6 +178,14 @@
   max-width: 24px;
 }
 
+.fw-width-30 {
+  width: 30px;
+}
+
+.fw-max-width-30 {
+  max-width: 30px;
+}
+
 .fw-width-40 {
   width: 40px;
 }
@@ -168,6 +208,14 @@
 
 .fw-max-width-53 {
   max-width: 53px;
+}
+
+.fw-width-56 {
+  width: 56px;
+}
+
+.fw-max-width-56 {
+  max-width: 56px;
 }
 
 .fw-width-60 {
@@ -208,6 +256,14 @@
 
 .fw-max-width-94 {
   max-width: 94px;
+}
+
+.fw-width-100 {
+  width: 100px;
+}
+
+.fw-max-width-100 {
+  max-width: 100px;
 }
 
 .fw-width-106 {
@@ -388,6 +444,18 @@
 
 .fw-min-height-24 {
   min-height: 24px;
+}
+
+.fw-height-30 {
+  height: 30px;
+}
+
+.fw-max-height-30 {
+  max-height: 30px;
+}
+
+.fw-min-height-30 {
+  min-height: 30px;
 }
 
 .fw-height-40 {
@@ -1159,6 +1227,26 @@
   padding-right: 0px;
 }
 
+.fw-padding-2 {
+  padding: 2px;
+}
+
+.fw-pt-2 {
+  padding-top: 2px;
+}
+
+.fw-pb-2 {
+  padding-bottom: 2px;
+}
+
+.fw-pl-2 {
+  padding-left: 2px;
+}
+
+.fw-pr-2 {
+  padding-right: 2px;
+}
+
 .fw-padding-5 {
   padding: 5px;
 }
@@ -1579,6 +1667,26 @@
   padding-right: 86px;
 }
 
+.fw-padding-90 {
+  padding: 90px;
+}
+
+.fw-pt-90 {
+  padding-top: 90px;
+}
+
+.fw-pb-90 {
+  padding-bottom: 90px;
+}
+
+.fw-pl-90 {
+  padding-left: 90px;
+}
+
+.fw-pr-90 {
+  padding-right: 90px;
+}
+
 .fw-flex {
   display: flex;
 }
@@ -1759,6 +1867,14 @@
 
 .fw-fz-50 {
   font-size: 50px;
+}
+
+.fw-fz-52 {
+  font-size: 52px;
+}
+
+.fw-fz-63 {
+  font-size: 63px;
 }
 
 .fw-line-height-18 {
@@ -1955,6 +2071,22 @@
 
 .fw-border-radius-percent-60 {
   border-radius: 60%;
+}
+
+.fw-border-color-blue-light {
+  border-color: #48abff;
+}
+
+.fw-border-color-purple2 {
+  border-color: #ac5eb3;
+}
+
+.fw-border-color-gray3 {
+  border-color: #f7f7f7;
+}
+
+.fw-border-color-gray2 {
+  border-color: #eeeeee;
 }
 
 .fw-border-color-red {

@@ -1,0 +1,63 @@
+.mailing-purple-hover
+	transition: all .3s
+	border: solid 1px #e6e6e6
+	&:hover
+		background-color: $colorPurple
+		border: solid 1px $colorPurple
+		color: $colorWhite
+
+.mailing-block-border-top-bottom
+	border-top: 1px solid #e7e7e7
+	border-bottom: 1px solid #e7e7e7
+
+.fw-white-btn-border
+	border: solid 2px #d8d9d8
+
+.m-mailing-100vh-gray
+	height: 100vh
+	max-height: calc(100vh - 60px)
+
+.fw-pointer
+	cursor: pointer
+
+.fw-white-border-2px
+	border: 2px solid $colorWhite
+// _______________________________________________________________________________________
+
+.m-mailing-main-wrapper
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+
+	.m-mailing-tags
+		margin-left: -15px
+	.mailing-slider-slide-img
+		width: 80px !important
+		height: 80px !important
+		margin: 0 auto
+	.mailing-slider
+		.owl-nav
+			position: absolute
+			right: 0
+			top: -20px
+			display: flex !important
+			align-items: center !important
+			justify-content: flex-start
+
+	.m-mailing-archive
+		&--item
+			&:nth-child(n + 3)
+				border-top: none
+	.mailing-z-index-list
+		li
+			position: absolute
+			left: 0
+			&:nth-child(n + 4)
+				display: none
+			&:nth-child(2)
+				left: 15px
+			&:nth-child(3)
+				left: calc(2 * 15px)
+			&:nth-child(0)
+				left: 0
