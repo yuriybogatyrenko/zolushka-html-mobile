@@ -2917,6 +2917,16 @@ button {
   width: 100%;
 }
 
+.ui-sortable-helper {
+  transform: scale(1.15);
+}
+.ui-sortable-helper .blur-overlay {
+  background-color: transparent;
+}
+.ui-sortable-helper .white-overlay {
+  display: none;
+}
+
 .m-profile-text-status {
   cursor: pointer;
   border: solid 1px #e7e7e7;

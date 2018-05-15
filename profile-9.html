@@ -69,8 +69,9 @@
             <span class="fw-block fw-fz-14 fw-color-gray-light fw-pb-15">Основное фото</span>
             <div class="m-profile-top-line fw-flex fw-flex-center fw-flex-space-between">
                 <div class="m-profile-avatar fw-width-80 fw-height-80 fw-relative">
-                    <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
-                    <div class="blur-overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50"></div>
+                    <div class="blur-overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50">
+                        <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+                    </div>
 
                     <span class="icomoon icomoon-profile-moderation-pending fw-absolute fw-right-0 fw-bottom-0 fw-fz-26">
                     <span class="path1"></span><span class="path2"></span>
@@ -99,8 +100,9 @@
                     </div>
 
                     <div class="m-profile-album-slider--slide fw-relative fw-ml-5 fw-width-90 fw-height-90 fw-border-radius-3">
-                        <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
-                        <div class="blur-overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1 fw-border-radius-3"></div>
+                        <div class="blur-overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1 fw-border-radius-3">
+                            <img class="fw-width-1-1 fw-height-1-1" src="http://placehold.it/200x200" alt="">
+                        </div>
 
                         <span class="icomoon icomoon-profile-moderation-pending fw-absolute fw-bottom-5 fw-right-5 fw-fz-26">
                         <span class="path1"></span><span class="path2"></span>
@@ -945,7 +947,10 @@
                 </div>
 
                 <div class="album-view-slide-buttons fw-flex fw-width-1-1 fw-pl-15 fw-pr-15 fw-absolute fw-flex-middle fw-flex-center">
-                    <a href="#" class="m-border-25 fw-width-180 fw-pt-15 fw-pb-15 fw-text-center fw-color-white fw-fz-16 m-white-bg">Заменить</a>
+                    <label class="m-border-25 fw-width-180 fw-pt-15 fw-pb-15 fw-text-center fw-color-white fw-fz-16 m-white-bg">
+                        Заменить
+                        <input class="m-hide fw-hidden" type="file" accept="image/*">
+                    </label>
                     <a href="#" class="fw-color-white fw-fz-16 m-white-bg fw-height-53 fw-width-53 fw-border-radius-percent-50 fw-flex fw-flex-center fw-flex-middle fw-ml-10"><i class="icomoon icomoon-mask fw-color-white"></i></a>
                     <a href="#" class="fw-color-white fw-fz-16 m-white-bg fw-height-53 fw-width-53 fw-border-radius-percent-50 fw-flex fw-flex-center fw-flex-middle fw-ml-10"><i class="icomoon icomoon-delete fw-fz-20 fw-color-white"></i></a>
                 </div>
@@ -1058,7 +1063,8 @@
     // sortable blocks
     $(function() {
         $("#m-top-droppable, #m-bottom-droppable").sortable({
-            connectWith: ".m-album-page"
+            connectWith: ".m-album-page",
+            addClasses: true
         }).disableSelection();
     });
 
