@@ -76,8 +76,8 @@
         
         <div class="fw-width-1-1 fw-bg-color-gray3 fw-pt-10 fw-height-1-1">
             <div class="m-create-mailing mailing-block-border-top-bottom fw-bg-color-white fw-width-1-1 fw-pt-10 fw-pb-10 fw-pl-15 fw-pr-15 fw-mb-10 fw-flex fw-flex-middle">
-               <div class="">
-                   <a href="#" class="fw-width-60 fw-block"><i class="fw-color-purple2 fw-fz-40 fw-block icomoon icomoon-add-solid"></i></a>
+               <div class="fw-min-width-40">
+                   <a href="#" class="fw-width-40 fw-height-40 fw-border-radius-percent-50 fw-flex fw-flex-middle fw-flex-center fw-bg-color-purple2"><i class="fw-color-white fw-fz-30 icomoon icomoon-plus"></i></a>
                </div>
 
                 <div class="fw-pl-15 fw-ml-5">
@@ -767,6 +767,32 @@
 
 
 <script>
+    $('#age_slider').change(function () {
+        var ageValue = $(".age_slider .slider .tooltip-inner").text().replace(":", "-").slice(0,7);
+        $('.filter-amount1').text(ageValue);
+        // $(this).text()
+    });
+
+
+
+
+    // mailing checkboxes black list
+    $('.js-selection-all-profile').on('click', function() {
+        var mailingListCheckbox = $('.js-m-select-users-checkbox');
+
+        if(mailingListCheckbox.filter(':checked').length === mailingListCheckbox.length){
+            mailingListCheckbox.prop('checked', false);
+        }else{
+            mailingListCheckbox.prop('checked', true);
+        }
+    });
+
+    $(function () {
+       var allCheckbox = $('.js-m-select-users-checkbox').length;
+        $('#all-checkboxes-count').text(allCheckbox);
+    });
+    //
+
 
     // m-mailing z-index list
     $(function () {

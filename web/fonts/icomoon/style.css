@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?t48x20');
-  src:  url('fonts/icomoon.eot?t48x20#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?t48x20') format('truetype'),
-    url('fonts/icomoon.woff?t48x20') format('woff'),
-    url('fonts/icomoon.svg?t48x20#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?t73etr');
+  src:  url('fonts/icomoon.eot?t73etr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t73etr') format('truetype'),
+    url('fonts/icomoon.woff?t73etr') format('woff'),
+    url('fonts/icomoon.svg?t73etr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-plus:before {
+  content: "\e925";
+}
+.icomoon-check:before {
+  content: "\e916";
+}
+.icomoon-chevron-right:before {
+  content: "\e915";
+}
+.icomoon-chevron-left:before {
+  content: "\e914";
+}
+.icomoon-like:before {
+  content: "\e924";
+}
+.icomoon-time2:before {
+  content: "\e923";
+}
 .icomoon-moderation2:before {
   content: "\e922";
 }
@@ -159,15 +177,6 @@
 }
 .icomoon-views:before {
   content: "\e909";
-}
-.icomoon-check:before {
-  content: "\e916";
-}
-.icomoon-chevron-right:before {
-  content: "\e915";
-}
-.icomoon-chevron-left:before {
-  content: "\e914";
 }
 .icomoon-phone2:before {
   content: "\e912";

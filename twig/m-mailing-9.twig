@@ -1,0 +1,27 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-mailing-main-wrapper">
+    <div class="m-container">
+        <div class="fw-pt-15">
+            <ul class="">
+                {% for i in 1..10 %}
+                <li class="fw-pr-15 fw-pl-15">
+                    <a href="#" class="fw-block fw-flex fw-mb-10 fw-flex-middle fw-flex-left">
+                        <img src="http://placehold.it/100x100" class="fw-width-50 fw-height-50 fw-border-radius-percent-50" alt="">
+
+                        <div class="fw-pl-15">
+                            <p class="fw-fz-16 fw-margin-0">Вика, 23</p>
+                            <span class="fw-color-gray-light fw-fz-12 fw-margin-0">Москва</span>
+                        </div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

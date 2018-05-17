@@ -1,0 +1,55 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-mailing-main-wrapper">
+    <div class="m-container">
+        <form action="" class="fw-pr-15 fw-pl-15">
+            <input type="search" placeholder="Поиск" class="fw-width-1-1 fw-height-40 m-input-style fw-mt-15">
+            <div class="mailing-checkbox fw-mt-25">
+                <input type="checkbox" class="no-style js-black-list-checkbox" id="m-checked-all">
+                <label for="m-checked-all" class="js-selection-all-profile fw-flex fw-flex-space-between fw-flex-middle">
+                    <div class="left fw-flex fw-flex-left fw-flex-middle">
+                        <p class="fw-fz-16 fw-margin-0">Всех, с кем был диалог</p>
+                    </div>
+
+                    <div class="fw-flex fw-flex-middle">
+                        <span id="all-checkboxes-count" class="fw-fz-16 fw-color-gray-light fw-mr-10"></span>
+                        <div class="fake-label fw-flex fw-border-radius-percent-50 fw-flex-middle fw-flex-center">
+                            <i class="icomoon icomoon-check fw-color-green"></i>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="fw-pt-15">
+                <ul class="">
+                    {% for i in 1..10 %}
+                    <li class="fw-mb-10">
+                        <div class="mailing-checkbox">
+                            <input type="checkbox" class="no-style js-m-select-users-checkbox" id="m-check1">
+                            <label for="m-check1" class="fw-flex fw-flex-space-between fw-flex-middle">
+                                <div class="left fw-flex fw-flex-left fw-flex-middle">
+                                    <img src="http://placehold.it/100x100" class="fw-width-50 fw-height-50 fw-border-radius-percent-50" alt="">
+
+                                    <div class="fw-pl-15">
+                                        <p class="fw-fz-16 fw-margin-0">Вика, 23</p>
+                                        <span class="fw-color-gray-light fw-fz-12 fw-margin-0">Москва</span>
+                                    </div>
+                                </div>
+
+                                <div class="fake-label fw-flex fw-border-radius-percent-50 fw-flex-middle fw-flex-center">
+                                    <i class="icomoon icomoon-check fw-color-green"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+

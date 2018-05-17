@@ -852,6 +852,32 @@
 
 
 <script>
+    $('#age_slider').change(function () {
+        var ageValue = $(".age_slider .slider .tooltip-inner").text().replace(":", "-").slice(0,7);
+        $('.filter-amount1').text(ageValue);
+        // $(this).text()
+    });
+
+
+
+
+    // mailing checkboxes black list
+    $('.js-selection-all-profile').on('click', function() {
+        var mailingListCheckbox = $('.js-m-select-users-checkbox');
+
+        if(mailingListCheckbox.filter(':checked').length === mailingListCheckbox.length){
+            mailingListCheckbox.prop('checked', false);
+        }else{
+            mailingListCheckbox.prop('checked', true);
+        }
+    });
+
+    $(function () {
+       var allCheckbox = $('.js-m-select-users-checkbox').length;
+        $('#all-checkboxes-count').text(allCheckbox);
+    });
+    //
+
 
     // m-mailing z-index list
     $(function () {

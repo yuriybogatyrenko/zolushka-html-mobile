@@ -1,0 +1,44 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-mailing-main-wrapper">
+    <div class="m-container">
+        <p class="fw-pl-15 fw-pr-15 fw-margin-0 fw-pt-20 fw-pb-20 fw-fz-16">
+            Во время действия рассылки нельзя редактировать исключенных пользователей
+        </p>
+
+        <span class="fw-fz-14 fw-pl-15 fw-pr-15 fw-color-gray-light fw-block">Исключенные пользователи</span>
+
+        <form action="" class="fw-pr-15 fw-pl-15">
+            <div class="fw-pt-15">
+                <ul class="">
+                    {% for i in 1..10 %}
+                    <li class="fw-mb-10">
+                        <div class="mailing-checkbox">
+                            <input type="checkbox" checked class="no-style js-m-select-users-checkbox" id="m-check1">
+                            <label for="m-check1" class="fw-flex fw-flex-space-between fw-flex-middle">
+                                <div class="left fw-flex fw-flex-left fw-flex-middle">
+                                    <img src="http://placehold.it/100x100" class="fw-width-50 fw-height-50 fw-border-radius-percent-50" alt="">
+
+                                    <div class="fw-pl-15">
+                                        <p class="fw-fz-16 fw-margin-0">Вика, 23</p>
+                                        <span class="fw-color-gray-light fw-fz-12 fw-margin-0">Москва</span>
+                                    </div>
+                                </div>
+
+                                <div class="fake-label fw-flex fw-border-radius-percent-50 fw-flex-middle fw-flex-center">
+                                    <i class="icomoon icomoon-check fw-color-green"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+

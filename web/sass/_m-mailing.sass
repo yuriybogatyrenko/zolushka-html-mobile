@@ -22,9 +22,85 @@
 
 .fw-white-border-2px
 	border: 2px solid $colorWhite
+.m-mailing-100vh-172
+	height: 100vh
+	max-height: calc(100vh - 172px)
+.fw-min-width-40
+	min-width: 40px
 // _______________________________________________________________________________________
 
 .m-mailing-main-wrapper
+	form
+		input::-webkit-input-placeholder
+			color: $colorGrayLight !important
+		input::-moz-placeholder
+			color: $colorGrayLight !important
+		input:-moz-placeholder
+			color: $colorGrayLight !important
+		input:-ms-input-placeholder
+			color: $colorGrayLight !important
+		textarea::-webkit-input-placeholder
+			color: $colorGrayLight !important
+		textarea::-moz-placeholder
+			color: $colorGrayLight !important
+		textarea:-moz-placeholder
+			color: $colorGrayLight !important
+		textarea:-ms-input-placeholder
+			color: $colorGrayLight !important
+	.bootstrap-select .btn
+		border-radius: 3px
+		background-color: #fff
+		border-color: #d8d9d8
+		color: #999999
+	.age_slider .slider .tooltip-inner
+		visibility: hidden
+	.slider.slider-horizontal
+		width: 97.5%
+	.age_slider .slider.slider-horizontal .slider-tick, .age_slider .slider.slider-horizontal .slider-handle
+		height: 0
+		margin-top: 0
+	.age_slider_wrap
+		padding-left: 0
+		.age_slider
+			margin-left: 0
+
+	.m-input-style
+		border: 1px solid #d8d9d8
+		border-radius: 3px
+		outline: none
+		padding: 13px 15px
+		font-size: 16px
+
+
+	input[type = "checkbox"]
+		display: none
+	.mailing-checkbox
+		text-align: left
+		label
+			display: flex
+			overflow: hidden
+			border-radius: 5px
+			transition: all .3s ease
+			cursor: pointer
+			.fake-label
+				padding: 0
+				width: 24px
+				height: 24px
+				border: solid 1px #d8d9d8
+				transition: all .3s ease
+				i
+					opacity: 0
+					font-size: 18px
+					margin: 0
+
+		input[type="checkbox"]:checked + label
+			.fake-label
+				background-color: $colorPurple2
+				border-color: $colorPurple2
+				i
+					opacity: 1
+					color: $colorWhite
+
 	ul
 		list-style-type: none
 		padding: 0
