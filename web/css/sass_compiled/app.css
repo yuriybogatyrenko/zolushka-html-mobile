@@ -1877,6 +1877,10 @@
   font-size: 22px;
 }
 
+.fw-fz-23 {
+  font-size: 23px;
+}
+
 .fw-fz-24 {
   font-size: 24px;
 }
@@ -1925,8 +1929,16 @@
   font-size: 52px;
 }
 
+.fw-fz-60 {
+  font-size: 60px;
+}
+
 .fw-fz-63 {
   font-size: 63px;
+}
+
+.fw-fz-70 {
+  font-size: 70px;
 }
 
 .fw-line-height-18 {
