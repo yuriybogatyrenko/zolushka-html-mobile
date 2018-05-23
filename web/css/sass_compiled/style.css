@@ -2822,7 +2822,7 @@ button {
   outline: none;
 }
 
-#m-slide-counter {
+.m-slide-counter {
   left: 50%;
   transform: translateX(-50%);
 }
@@ -2864,13 +2864,13 @@ button {
 }
 
 .m-infoblock-white-btn {
-  border: solid 2px #d8d9d8;
+  border: solid 2px #999;
   outline: none;
   border-radius: 20px;
   background-color: #fff;
 }
 .m-infoblock-white-btn:hover {
-  border-color: #999;
+  border-color: #d8d9d8;
 }
 
 .m-profile-empty-photo-wrap {
@@ -2881,11 +2881,11 @@ button {
   border-bottom: 1px solid #e7e7e7;
 }
 
-.m-profile-top-line .m-profile-avatar .m-load-avatar-input {
+.m-load-avatar-input {
   display: none;
 }
 
-#slider-load-img-input {
+.m-profile-top-line .m-profile-avatar .m-load-avatar-input {
   display: none;
 }
 
@@ -2907,6 +2907,9 @@ button {
   pointer-events: none;
 }
 
+.m-profile-album-slider--slide .load-field-label .m-load-avatar-input {
+  display: none;
+}
 .m-profile-album-slider .owl-nav {
   background-color: transparent !important;
 }
@@ -2950,6 +2953,11 @@ button {
   background-color: #fff;
 }
 
+.fw-100vh-60px {
+  height: 100vh;
+  max-height: calc(100vh - 60px);
+}
+
 .m-100vh {
   height: 100vh;
   max-height: calc(100vh - 80px);
@@ -2960,12 +2968,12 @@ button {
   max-height: calc(100vh - 125px);
 }
 
-#set-phone-block .bootstrap-select .btn {
+.set-phone-block .bootstrap-select .btn {
   background-color: #fff;
   border-radius: 3px 0 0 3px;
   border-color: #d8d9d8;
 }
-#set-phone-block .form-line .m-new-validate-phone {
+.set-phone-block .form-line .m-new-validate-phone {
   border-left: none;
   border-radius: 0 3px 3px 0;
   border-color: #d8d9d8;
@@ -3061,7 +3069,7 @@ button {
   width: 50%;
   height: 40px;
   line-height: 2.7em;
-  background: #FFF none repeat scroll 0% 0%;
+  background: #fff none repeat scroll 0% 0%;
   transition: all 0.5s ease;
   text-align: center;
 }
@@ -3075,7 +3083,7 @@ button {
   border-radius: 3px;
   background-color: #fff;
   border-color: #d8d9d8;
-  color: #999999;
+  color: #999;
 }
 .m-reg_form .line_wrap .selectpicker {
   border-radius: 3px;
@@ -3106,7 +3114,7 @@ button {
   border-radius: 3px;
   background-color: #fff;
   width: 44%;
-  color: #999999 !important;
+  color: #999 !important;
   border-color: #d8d9d8;
 }
 .m-born-day-select .bootstrap-select {
@@ -3121,6 +3129,18 @@ button {
 }
 .ui-sortable-helper .white-overlay {
   display: none;
+}
+
+.fw-width-percent-23 {
+  width: 23%;
+}
+
+.fw-width-percent-77 {
+  width: 77%;
+}
+
+.fw-height-42px {
+  height: 42px !important;
 }
 
 .m-profile-text-status {
@@ -3268,7 +3288,7 @@ button {
   border-radius: 3px;
   background-color: #fff;
   border-color: #d8d9d8;
-  color: #999999;
+  color: #999;
 }
 .m-mailing-main-wrapper .age_slider .slider .tooltip-inner {
   visibility: hidden;

@@ -187,10 +187,10 @@
                             </select>
                         </div>
 
-                        <label class="fw-fz-14 fw-width-1-1 fw-flex fw-flex-space-between fw-color-gray-light fw-mt-20 fw-mb-15" for="about-me">Приветственное сообщение <span class="fw-color-gray-light fw-fz-14"><span id="chars">0</span> / 500</span></label>
+                        <label class="fw-fz-14 fw-width-1-1 fw-flex fw-flex-space-between fw-color-gray-light fw-mt-20 fw-mb-15" for="about-me">Приветственное сообщение <span class="fw-color-gray-light fw-fz-14"><span class="js-chars">0</span> / 500</span></label>
                         <textarea id="about-me" maxlength="500"
                                   placeholder="Раскажите что-нибудь о себе или какие отношения предпочтитаете"
-                                  class="m-input-style fw-height-120 fw-width-1-1 fw-color-gray-light fw-fz-14"
+                                  class="js-textarea-max-chars-500 m-input-style fw-height-120 fw-width-1-1 fw-color-gray-light fw-fz-14"
                         ></textarea>
 
                         <div class="m-input-line-wrap fw-pt-10">
@@ -280,7 +280,7 @@
 
                             <div class="line_wrap">
                                 <select name="client[relations]" class="selectpicker display_block gray_select_style service-select">
-                                    <option>Отношения</option>
+                                    <option selected disabled>Отношения</option>
                                     <option value="1">Отношения</option>
                                     <option value="2">Отношения</option>
                                 </select>
@@ -288,7 +288,7 @@
 
                             <div class="line_wrap">
                                 <select name="client[children]" class="selectpicker display_block gray_select_style service-select">
-                                    <option>Дети</option>
+                                    <option selected disabled>Дети</option>
                                     <option value="1">Дети</option>
                                     <option value="2">Дети</option>
                                 </select>
@@ -297,24 +297,18 @@
                             <p class="fw-fz-14 fw-color-gray-light fw-text-left fw-pt-20 fw-pb-15 fw-margin-0">Сексуальные предпочтения</p>
 
                             <div class="select_wrap">
-                                <select name="client[sexualPeriodicity]"
-                                        class="selectpicker gray_select_style display_block">
-                                    <option value="">Периодичность</option>
-                                    <option value="3"
-                                    >Несколько раз в день</option>
-                                    <option value="4"
-                                    >Хотя бы раз в день</option>
-                                    <option value="5"
-                                    >Несколько раз в неделю</option>
-                                    <option value="6"
-                                    >Несколько раз в месяц</option>
-                                    <option value="7"
-                                    >Секс не очень важен</option>
+                                <select name="client[sexualPeriodicity]" class="selectpicker gray_select_style display_block">
+                                    <option value=""selected disabled>Периодичность</option>
+                                    <option value="3">Несколько раз в день</option>
+                                    <option value="4">Хотя бы раз в день</option>
+                                    <option value="5">Несколько раз в неделю</option>
+                                    <option value="6">Несколько раз в месяц</option>
+                                    <option value="7">Секс не очень важен</option>
                                 </select>
                             </div>
                             <div class="select_wrap">
                                 <select name="client[sexualRole]" class="selectpicker gray_select_style display_block">
-                                    <option value="">Роль в сексе</option>
+                                    <option value="" selected disabled>Роль в сексе</option>
                                     <option value="4">Актив</option>
                                     <option value="5">Пассив</option>
                                     <option value="6">Бревно</option>
@@ -323,32 +317,22 @@
                             <div class="select_wrap">
                                 <select name="client[sexualKind][]" class="selectpicker gray_select_style display_block" multiple>
                                     <option value="" selected disabled>Вид секса</option>
-                                    <option value="3"
-                                    >Классический</option>
-                                    <option value="4"
-                                    >Виртуальный</option>
-                                    <option value="5"
-                                    >Оральный</option>
-                                    <option value="6"
-                                    >Анальный</option>
-                                    <option value="7"
-                                    >Групповой</option>
+                                    <option value="3">Классический</option>
+                                    <option value="4">Виртуальный</option>
+                                    <option value="5">Оральный</option>
+                                    <option value="6">Анальный</option>
+                                    <option value="7">Групповой</option>
                                 </select>
                             </div>
 
                             <div class="select_wrap">
                                 <select name="client[sexualKind][]" class="selectpicker gray_select_style display_block" multiple>
                                     <option value="" selected disabled>Ориентация</option>
-                                    <option value="3"
-                                    >пукт</option>
-                                    <option value="4"
-                                    >пукт</option>
-                                    <option value="5"
-                                    >пукт</option>
-                                    <option value="6"
-                                    >пукт</option>
-                                    <option value="7"
-                                    >пукт</option>
+                                    <option value="3">пукт</option>
+                                    <option value="4">пукт</option>
+                                    <option value="5">пукт</option>
+                                    <option value="6">пукт</option>
+                                    <option value="7">пукт</option>
                                 </select>
                             </div>
                         </div>
@@ -872,7 +856,7 @@
 <div style="display: none;" id="m-profile-male-photo-album" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -920,7 +904,7 @@
 <div style="display: none;" id="m-profile-male-photo-album-moderation" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
 
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
@@ -1299,7 +1283,7 @@
             var element   = event.target;
             var items     = event.item.count;
             var item      = event.item.index + 1;
-            $('#m-slide-counter').html(item + " из " + items);
+            $('.m-slide-counter').html(item + " из " + items);
         }
     });
 
@@ -1317,10 +1301,10 @@
     // chars counter
     $( function() {
         var maxLength = 500;
-        $('textarea').keyup(function() {
+        $('.js-textarea-max-chars-500').keyup(function() {
             var length = $(this).val().length;
-            var length = length;
-            $('#chars').text(length);
+            // var length = length;
+            $('.js-chars').text(length);
         });
     });
 

@@ -64,8 +64,7 @@
     </nav>
 
 </header>        <div style="display: block;" class="m-profile profile-female-status-photo-main-empty">
-    <div class="container fw-pt-30 fw-text-center">
-        <div class="fw-pl-15 fw-pr-15">
+    <div class="fw-pt-30 fw-text-center">
             <div class="m-green-icon-wrap fw-margin-auto fw-width-70 fw-height-70 fw-border-radius-percent-50 fw-flex fw-flex-center fw-flex-middle fw-mb-15">
                 <i class="icomoon icomoon-check fw-color-white fw-fz-49"></i>
             </div>
@@ -74,6 +73,7 @@
             <p class="fw-fz-14 fw-mb-30 ">Так же, чтобы увеличить количество просмотров и откликов заполните дополнительные сведения о себе</p>
 
             <form action="#">
+                <div class="container">
                 <div class="m-female-update-select">
                     <div class="line_wrap">
                         <select class="selectpicker display_block gray_select_style service-select">
@@ -110,46 +110,31 @@
                     <p class="fw-fz-14 fw-color-gray-light fw-text-left fw-pt-10 fw-pb-20">Сексуальные предпочтения</p>
 
                     <div class="select_wrap">
-                        <select name="client[sexualPeriodicity]"
-                                class="selectpicker gray_select_style display_block">
+                        <select name="client[sexualPeriodicity]" class="selectpicker gray_select_style display_block">
                             <option value="">Периодичность</option>
-                            <option value="3"
-                            >Несколько раз в день</option>
-                            <option value="4"
-                            >Хотя бы раз в день</option>
-                            <option value="5"
-                            >Несколько раз в неделю</option>
-                            <option value="6"
-                            >Несколько раз в месяц</option>
-                            <option value="7"
-                            >Секс не очень важен</option>
+                            <option value="3">Несколько раз в день</option>
+                            <option value="4">Хотя бы раз в день</option>
+                            <option value="5">Несколько раз в неделю</option>
+                            <option value="6">Несколько раз в месяц</option>
+                            <option value="7">Секс не очень важен</option>
                         </select>
                     </div>
                     <div class="select_wrap">
-                        <select name="client[sexualRole]"
-                                class="selectpicker gray_select_style display_block">
+                        <select name="client[sexualRole]" class="selectpicker gray_select_style display_block">
                             <option value="">Роль в сексе</option>
-                            <option value="4"
-                            >Актив</option>
-                            <option value="5"
-                            >Пассив</option>
-                            <option value="6"
-                            >Бревно</option>
+                            <option value="4">Актив</option>
+                            <option value="5">Пассив</option>
+                            <option value="6">Бревно</option>
                         </select>
                     </div>
                     <div class="select_wrap">
                         <select name="client[sexualKind][]" class="selectpicker gray_select_style display_block" multiple>
                             <option value="" selected disabled>Вид секса</option>
-                            <option value="3"
-                            >Классический</option>
-                            <option value="4"
-                            >Виртуальный</option>
-                            <option value="5"
-                            >Оральный</option>
-                            <option value="6"
-                            >Анальный</option>
-                            <option value="7"
-                            >Групповой</option>
+                            <option value="3">Классический</option>
+                            <option value="4">Виртуальный</option>
+                            <option value="5">Оральный</option>
+                            <option value="6">Анальный</option>
+                            <option value="7">Групповой</option>
                         </select>
                     </div>
 
@@ -162,10 +147,10 @@
                         </select>
                     </div>
                 </div>
-            </form>
-        </div>
+                </div>
 
-        <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-mt-30 fw-color-white">Сохранить</button>
+                <button class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-mt-30 fw-color-white">Сохранить</button>
+            </form>
     </div>
 </div>
     </div>
@@ -680,7 +665,7 @@
 <div style="display: none;" id="m-profile-male-photo-album" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -728,7 +713,7 @@
 <div style="display: none;" id="m-profile-male-photo-album-moderation" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
 
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
@@ -1107,7 +1092,7 @@
             var element   = event.target;
             var items     = event.item.count;
             var item      = event.item.index + 1;
-            $('#m-slide-counter').html(item + " из " + items);
+            $('.m-slide-counter').html(item + " из " + items);
         }
     });
 
@@ -1125,10 +1110,10 @@
     // chars counter
     $( function() {
         var maxLength = 500;
-        $('textarea').keyup(function() {
+        $('.js-textarea-max-chars-500').keyup(function() {
             var length = $(this).val().length;
-            var length = length;
-            $('#chars').text(length);
+            // var length = length;
+            $('.js-chars').text(length);
         });
     });
 

@@ -2,8 +2,7 @@
 
 {% block profile %}
 <div class="m-profile profile-female-status-photo-main-empty">
-    <div class="container">
-        <div class="fw-padding-15">
+        <div class="container fw-pt-15">
             <div class="m-profile-top-line fw-flex fw-flex-center fw-flex-left">
                 <div class="m-profile-avatar fw-width-80 fw-height-80 fw-relative">
                     <div class="blur-overlay fw-absolute fw-left-0 fw-top-0 fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50">
@@ -63,7 +62,7 @@
             </div>
         </div>
 
-        <div class="fw-pt-20 fw-pr-15 m-gray-bg fw-pl-15 fw-text-center">
+        <div class="container fw-pt-20 m-gray-bg fw-text-center">
             <div class="m-profile-empty-photo-wrap fw-pb-20">
                 <p class="fw-fz-14 fw-color-gray-light">Пробный аккаунт, осталось:</p>
                 <p class="fw-mt-10 fw-mb-15 fw-fz-16 fw-flex fw-flex-middle fw-flex-center"><i class="fw-color-gray-light fw-fz-20 fw-mr-9 icomoon icomoon-trial-account"></i> 30 минут</p>
@@ -117,11 +116,7 @@
                                 <div class="line_wrap age_slider_wrap clearfix">
                                     <div class="field_title">Рост</div>
                                     <div class="age_slider jquery_bootstrap_slider range">
-                                        <input id="tall_slider" class="range_slider_jquery_sod" type="text" value=""
-                                               data-slider-min="140" data-slider-max="200" data-slider-step="1"
-                                               name="client[height]"
-                                               data-slider-value="175"/>
-
+                                        <input id="tall_slider" class="range_slider_jquery_sod" type="text" value="" data-slider-min="140" data-slider-max="200" data-slider-step="1" name="client[height]" data-slider-value="175"/>
                                         <div class="l_bl">140</div>
                                         <div class="r_bl">200</div>
                                     </div>
@@ -130,11 +125,7 @@
                                 <div class="line_wrap age_slider_wrap clearfix">
                                     <div class="field_title">Вес</div>
                                     <div class="age_slider jquery_bootstrap_slider range">
-                                        <input id="weight_slider" class="range_slider_jquery_sod" type="text" value=""
-                                               data-slider-min="40" data-slider-max="150" data-slider-step="1"
-                                               name="client[weight]"
-                                               data-slider-value="60"/>
-
+                                        <input id="weight_slider" class="range_slider_jquery_sod" type="text" value="" data-slider-min="40" data-slider-max="150" data-slider-step="1" name="client[weight]" data-slider-value="60"/>
                                         <div class="l_bl">40</div>
                                         <div class="r_bl">150</div>
                                     </div>
@@ -143,78 +134,49 @@
 
                                 <div class="line_wrap person_parametr_select_list">
                                     <div class="select_wrap">
-                                        <select name="client[hairColor]"
-                                                class="selectpicker gray_select_style display_block">
-                                            <option value="">Цвет волос</option>
-                                            <option value="13"
-                                            >Блондин</option>
-                                            <option value="14"
-                                                    selected>Брюнет</option>
-                                            <option value="15"
-                                            >Рыжий</option>
-                                            <option value="16"
-                                            >Черный</option>
+                                        <select name="client[hairColor]" class="selectpicker gray_select_style display_block">
+                                            <option value="" selected>Цвет волос</option>
+                                            <option value="13">Блондин</option>
+                                            <option value="14">Брюнет</option>
+                                            <option value="15">Рыжий</option>
+                                            <option value="16">Черный</option>
                                         </select>
                                     </div>
 
                                     <div class="select_wrap">
-                                        <select name="client[eyeColor]"
-                                                class="selectpicker gray_select_style display_block">
+                                        <select name="client[eyeColor]" class="selectpicker gray_select_style display_block">
                                             <option value="">Цвет глаз</option>
-                                            <option value="16"
-                                            >Карие</option>
-                                            <option value="17"
-                                                    selected
-                                            >Зеленые</option>
-                                            <option value="18"
-                                            >Голубые</option>
-                                            <option value="19"
-                                            >Серые</option>
+                                            <option value="16">Карие</option>
+                                            <option value="17" selected>Зеленые</option>
+                                            <option value="18">Голубые</option>
+                                            <option value="19">Серые</option>
                                         </select>
                                     </div>
 
                                     <div class="select_wrap">
-                                        <select name="client[physique]"
-                                                class="selectpicker gray_select_style display_block">
+                                        <select name="client[physique]" class="selectpicker gray_select_style display_block">
                                             <option value="">Телосложение</option>
-                                            <option value="21"
-                                                    selected>Худощавый</option>
-                                            <option value="22"
-                                            >Стандартный</option>
-                                            <option value="23"
-                                            >Спортивный</option>
-                                            <option value="24"
-                                            >Мускулистый</option>
-                                            <option value="25"
-                                            >Плотный</option>
-                                            <option value="26"
-                                            >Полный</option>
+                                            <option value="21" selected>Худощавый</option>
+                                            <option value="22">Стандартный</option>
+                                            <option value="23">Спортивный</option>
+                                            <option value="24">Мускулистый</option>
+                                            <option value="25">Плотный</option>
+                                            <option value="26">Полный</option>
                                         </select>
                                     </div>
 
                                     <div class="select_wrap">
-                                        <select name="client[appearance]"
-                                                class="selectpicker gray_select_style display_block">
+                                        <select name="client[appearance]" class="selectpicker gray_select_style display_block">
                                             <option value="">Внешность</option>
-                                            <option value="3"
-                                                    selected
-                                            >Европейская</option>
-                                            <option value="4"
-                                            >Азиатская</option>
-                                            <option value="5"
-                                            >Кавказская</option>
-                                            <option value="6"
-                                            >Индийская</option>
-                                            <option value="7"
-                                            >Испанская</option>
-                                            <option value="8"
-                                            >Ближневосточная</option>
-                                            <option value="9"
-                                            >Американская</option>
-                                            <option value="10"
-                                            >Смешанная</option>
-                                            <option value="11"
-                                            >Темнокожая</option>
+                                            <option value="3" selected>Европейская</option>
+                                            <option value="4">Азиатская</option>
+                                            <option value="5">Кавказская</option>
+                                            <option value="6">Индийская</option>
+                                            <option value="7">Испанская</option>
+                                            <option value="8">Ближневосточная</option>
+                                            <option value="9">Американская</option>
+                                            <option value="10">Смешанная</option>
+                                            <option value="11">Темнокожая</option>
                                         </select>
                                     </div>
                                 </div>
@@ -313,47 +275,31 @@
                                 <div class="sexual_preferences_block">
                                     <div class="line_wrap person_parametr_select_list">
                                         <div class="select_wrap">
-                                            <select name="client[sexualPeriodicity]"
-                                                    class="selectpicker gray_select_style display_block">
+                                            <select name="client[sexualPeriodicity]" class="selectpicker gray_select_style display_block">
                                                 <option value="">Периодичность</option>
-                                                <option value="3"
-                                                >Несколько раз в день</option>
-                                                <option value="4"
-                                                >Хотя бы раз в день</option>
-                                                <option value="5"
-                                                >Несколько раз в неделю</option>
-                                                <option value="6"
-                                                >Несколько раз в месяц</option>
-                                                <option value="7"
-                                                >Секс не очень важен</option>
+                                                <option value="3">Несколько раз в день</option>
+                                                <option value="4">Хотя бы раз в день</option>
+                                                <option value="5">Несколько раз в неделю</option>
+                                                <option value="6">Несколько раз в месяц</option>
+                                                <option value="7">Секс не очень важен</option>
                                             </select>
                                         </div>
                                         <div class="select_wrap">
-                                            <select name="client[sexualRole]"
-                                                    class="selectpicker gray_select_style display_block">
+                                            <select name="client[sexualRole]" class="selectpicker gray_select_style display_block">
                                                 <option value="">Роль в сексе</option>
-                                                <option value="4"
-                                                >Актив</option>
-                                                <option value="5"
-                                                >Пассив</option>
-                                                <option value="6"
-                                                >Бревно</option>
+                                                <option value="4">Актив</option>
+                                                <option value="5">Пассив</option>
+                                                <option value="6">Бревно</option>
                                             </select>
                                         </div>
                                         <div class="select_wrap">
-                                            <select name="client[sexualKind][]"
-                                                    class="selectpicker gray_select_style display_block" multiple>
+                                            <select name="client[sexualKind][]" class="selectpicker gray_select_style display_block" multiple>
                                                 <option value="" selected disabled>Вид секса</option>
-                                                <option value="3"
-                                                >Классический</option>
-                                                <option value="4"
-                                                >Виртуальный</option>
-                                                <option value="5"
-                                                >Оральный</option>
-                                                <option value="6"
-                                                >Анальный</option>
-                                                <option value="7"
-                                                >Групповой</option>
+                                                <option value="3">Классический</option>
+                                                <option value="4">Виртуальный</option>
+                                                <option value="5">Оральный</option>
+                                                <option value="6">Анальный</option>
+                                                <option value="7">Групповой</option>
                                             </select>
                                         </div>
                                     </div>
@@ -385,47 +331,31 @@
                                 <div class="sexual_preferences_block">
                                     <div class="line_wrap person_parametr_select_list">
                                         <div class="select_wrap">
-                                            <select name="client[sexualPeriodicity]"
-                                                    class="selectpicker gray_select_style display_block">
+                                            <select name="client[sexualPeriodicity]" class="selectpicker gray_select_style display_block">
                                                 <option value="">titlte</option>
-                                                <option value="3"
-                                                >пункт</option>
-                                                <option value="4"
-                                                >пункт</option>
-                                                <option value="5"
-                                                >пункт</option>
-                                                <option value="6"
-                                                >пункт</option>
-                                                <option value="7"
-                                                >пункт</option>
+                                                <option value="3">пункт</option>
+                                                <option value="4">пункт</option>
+                                                <option value="5">пункт</option>
+                                                <option value="6">пункт</option>
+                                                <option value="7">пункт</option>
                                             </select>
                                         </div>
                                         <div class="select_wrap">
-                                            <select name="client[sexualRole]"
-                                                    class="selectpicker gray_select_style display_block">
+                                            <select name="client[sexualRole]" class="selectpicker gray_select_style display_block">
                                                 <option value="">titlte</option>
-                                                <option value="4"
-                                                >пункт</option>
-                                                <option value="5"
-                                                >пункт</option>
-                                                <option value="6"
-                                                >пункт</option>
+                                                <option value="4">пункт</option>
+                                                <option value="5">пункт</option>
+                                                <option value="6">пункт</option>
                                             </select>
                                         </div>
                                         <div class="select_wrap">
-                                            <select name="client[sexualKind][]"
-                                                    class="selectpicker gray_select_style display_block" multiple>
+                                            <select name="client[sexualKind][]" class="selectpicker gray_select_style display_block" multiple>
                                                 <option value="" selected disabled>title</option>
-                                                <option value="3"
-                                                >пункт</option>
-                                                <option value="4"
-                                                >пункт</option>
-                                                <option value="5"
-                                                >пункт</option>
-                                                <option value="6"
-                                                >пункт</option>
-                                                <option value="7"
-                                                >пункт</option>
+                                                <option value="3">пункт</option>
+                                                <option value="4">пункт</option>
+                                                <option value="5">пункт</option>
+                                                <option value="6">пункт</option>
+                                                <option value="7">пункт</option>
                                             </select>
                                         </div>
                                     </div>
@@ -443,7 +373,6 @@
             </section>
         </div>
     </div>
-</div>
 
 {% endblock %}
 

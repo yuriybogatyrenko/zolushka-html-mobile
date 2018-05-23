@@ -64,8 +64,8 @@
     </nav>
 
 </header>        
-    <div class="container">
-        <div class="m-popup-content m-100vh fw-relative fw-text-center fw-relative">
+        <div class="m-popup-content fw-100vh-60px fw-relative fw-text-center fw-relative">
+            <div class="container">
             <h3 class="fw-fz-20 fw-line-height-25 fw-pt-10">Подтвердите фото</h3>
             <p class="fw-margin-o fw-pt-10 fw-fz-14 fw-pb-25 fw-pr-15 fw-pl-15">Напишите ваш ID на бумаге и сделайте
                 фото с ним, как показано на примере:</p>
@@ -76,13 +76,13 @@
             <p class="fw-text-center fw-fz-12 fw-mt-20 fw-mb-10 fw-line-height-25 fw-color-gray-light">Ваш ID</p>
             <b class="fw-text-center fw-fz-30 fw-mt-30 fw-mb-25 fw-line-height-25 fw-pb-15">245503</b>
             <p class="fw-fz-12 fw-mb-40 fw-line-height-18 fw-color-gray-light fw-pr-15 fw-pl-15">Фотография нужна только для подтверждения, мы не будем ее публиковать</p>
-
+            </div>
             <label class="fw-width-1-1 fw-absolute fw-bottom-0 fw-left-0 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white fw-text-center fw-margin-0">
                 Добавить основное фото
                 <input class="m-hide fw-hidden" type="file" accept="image/*">
             </label>
         </div>
-    </div>
+
 
     </div>
 
@@ -596,7 +596,7 @@
 <div style="display: none;" id="m-profile-male-photo-album" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -644,7 +644,7 @@
 <div style="display: none;" id="m-profile-male-photo-album-moderation" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
 
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
@@ -1023,7 +1023,7 @@
             var element   = event.target;
             var items     = event.item.count;
             var item      = event.item.index + 1;
-            $('#m-slide-counter').html(item + " из " + items);
+            $('.m-slide-counter').html(item + " из " + items);
         }
     });
 
@@ -1041,10 +1041,10 @@
     // chars counter
     $( function() {
         var maxLength = 500;
-        $('textarea').keyup(function() {
+        $('.js-textarea-max-chars-500').keyup(function() {
             var length = $(this).val().length;
-            var length = length;
-            $('#chars').text(length);
+            // var length = length;
+            $('.js-chars').text(length);
         });
     });
 

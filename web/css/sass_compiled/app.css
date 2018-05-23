@@ -3557,7 +3557,7 @@ button {
   outline: none;
 }
 
-#m-slide-counter {
+.m-slide-counter {
   left: 50%;
   transform: translateX(-50%);
 }

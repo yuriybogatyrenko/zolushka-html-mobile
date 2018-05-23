@@ -9,12 +9,12 @@
 	background-color: $colorRedLight
 
 .m-infoblock-white-btn
-	border: solid 2px #d8d9d8
+	border: solid 2px $colorGrayLight
 	outline: none
 	border-radius: 20px
 	background-color: $colorWhite
 	&:hover
-		border-color: #999
+		border-color: $colorGray
 
 
 .m-profile
@@ -25,14 +25,15 @@
 	border-bottom: 1px solid #e7e7e7
 
 
+.m-load-avatar-input
+	display: none
 
 .m-profile-top-line
 	.m-profile-avatar
 		.m-load-avatar-input
 			display: none
 
-#slider-load-img-input
-	display: none
+
 .load-field-label
 	border: 1px solid #e7e7e7
 	.icomoon-photo-plus
@@ -48,6 +49,10 @@
 
 .m-profile-album
 	&-slider
+		&--slide
+			.load-field-label
+				.m-load-avatar-input
+					display: none
 		.owl-nav
 			background-color: transparent !important
 			i
@@ -82,8 +87,10 @@
 	.line_wrap
 		.selectpicker
 			border-radius: 3px
-			background-color: #fff
-
+			background-color: $colorWhite
+.fw-100vh-60px
+	height: 100vh
+	max-height: calc(100vh - 60px)
 .m-100vh
 	height: 100vh
 	max-height: calc(100vh - 80px)
@@ -91,16 +98,16 @@
 	height: 100vh
 	max-height: calc(100vh - 125px)
 
-#set-phone-block
+.set-phone-block
 	.bootstrap-select .btn
 		background-color: $colorWhite
 		border-radius: 3px 0 0 3px
-		border-color: #d8d9d8
+		border-color: $colorGray
 	.form-line
 		.m-new-validate-phone
 			border-left: none
 			border-radius: 0 3px 3px 0
-			border-color: #d8d9d8
+			border-color: $colorGray
 .m-profile-data, .m-reg_form
 	textarea::-webkit-input-placeholder
 		color: $colorGrayLight !important
@@ -124,13 +131,13 @@
 		border-radius: 3px
 		background-color: $colorWhite
 		color: $colorGrayLight
-		border-color: #d8d9d8
+		border-color: $colorGray
 	.line_wrap
 		.selectpicker
 			border-radius: 3px
 			background-color: $colorWhite
 	.m-input-style
-		border-color: #d8d9d8
+		border-color: $colorGray
 		border-radius: 3px
 		padding: 13px 15px
 		font-size: 16px
@@ -143,12 +150,12 @@
 	cursor: pointer
 	color: $colorGrayLight
 .update-avatar-btn
-	border: solid 2px #d8d9d8
+	border: solid 2px $colorGray
 	outline: none
 	border-radius: 3px
 	background-color: $colorWhite
 	&:hover
-		border-color: #999
+		border-color: $colorGrayLight
 		color: $colorPurple
 
 .m-width-75
@@ -170,12 +177,12 @@
 	display: flex
 
 .m-reg_form .sex .radio_wrap
-	border: 1px solid #d8d9d8
+	border: 1px solid $colorGray
 	position: relative
 	width: 50%
 	height: 40px
 	line-height: 2.7em
-	background: #FFF none repeat scroll 0% 0%
+	background: $colorWhite none repeat scroll 0% 0%
 	transition: all 0.5s ease
 	text-align: center
 
@@ -188,8 +195,8 @@
 	.bootstrap-select .btn
 		border-radius: 3px
 		background-color: $colorWhite
-		border-color: #d8d9d8
-		color: #999999
+		border-color: $colorGray
+		color: $colorGrayLight
 	.line_wrap
 		.selectpicker
 			border-radius: 3px
@@ -201,7 +208,7 @@
 		border-radius: 0 3px 3px 0
 		border-left: none
 	.m-input-style
-		border-color: #d8d9d8
+		border-color: $colorGray
 		border-radius: 3px
 		padding: 12px 15px
 		height: 40px
@@ -214,8 +221,8 @@
 		border-radius: 3px
 		background-color: $colorWhite
 		width: 44%
-		color: #999999 !important
-		border-color: #d8d9d8
+		color: $colorGrayLight !important
+		border-color: $colorGray
 	.bootstrap-select
 		width: 100%
 
@@ -225,3 +232,11 @@
 		background-color: transparent
 	.white-overlay
 		display: none
+
+.fw-width-percent-23
+	width: 23%
+.fw-width-percent-77
+	width: 77%
+
+.fw-height-42px
+	height: 42px !important

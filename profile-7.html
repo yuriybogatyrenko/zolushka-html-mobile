@@ -63,15 +63,13 @@
         </div>
     </nav>
 
-</header>        
-    <div class="container">
-        <div class="m-popup-content m-100vh m-validate-phone-number fw-relative fw-text-center fw-relative">
-            <h3 class="fw-fz-20 fw-line-height-25 fw-pt-10 fw-text-left fw-pl-15">Укажите номер телефона</h3>
+</header>                <div class="m-popup-content m-100vh m-validate-phone-number fw-relative fw-text-center fw-relative">
+            <h3 class="fw-fz-20 fw-line-height-25 fw-pt-10 fw-pl-15 fw-text-left">Укажите номер телефона</h3>
 
             <form action="#" class="posr m-validate-phone-form" data-validate-form="empty">
-
-                <div id="set-phone-block" class="fw-flex fw-flex-center">
-                    <div style="width: 30%!important; display: inline-block;">
+                <div class="container">
+                <div id="set-phone-block" class="set-phone-block fw-flex fw-flex-center">
+                    <div class="fw-inline-block fw-width-percent-23">
                         <select class="selectpicker display_block select-country-code" name="phone-country">
                             <option value="+7" selected                                        title="+7">Россия</option>
                             <option value="+375"                                        title="+375">Беларусь</option>
@@ -314,21 +312,20 @@
                         </select>
                     </div>
 
-                    <div class="form-line mb20 mb15 posr" style="width: 62%;">
-                        <input type="text" name="phone" style="height: 42px;" class="validate-phone m-new-validate-phone" placeholder="Номер телефона">
+                    <div class="form-line mb20 mb15 posr fw-width-percent-77">
+                        <input type="text" name="phone" class="fw-height-42px validate-phone m-new-validate-phone" placeholder="Номер телефона">
                         <div class="form-error-tooltip">Неверный код</div>
                     </div>
                 </div>
 
-                <p class="fw-fz-14 fw-text-left fw-pl-15 fw-pt-10 fw-pb-10">На указанный номер придет SMS с кодом</p>
-                <p class="fw-fz-14 fw-text-left fw-pl-15 fw-pr-10 fw-pb-10 fw-color-gray-light fw-margin-0">
+                <p class="fw-fz-14 fw-text-left fw-pt-10 fw-pb-10">На указанный номер придет SMS с кодом</p>
+                <p class="fw-fz-14 fw-text-left fw-pr-10 fw-pb-10 fw-color-gray-light fw-margin-0">
                     Подключение телефона обеспечивает дополнительную защиту аккаунта. Мы никому не разглашаем ваши данные
                 </p>
-
+                </div>
                 <button type="submit" class="fw-width-1-1 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white fw-absolute fw-bottom-0 fw-left-0">Продолжить</button>
             </form>
         </div>
-    </div>
 
     </div>
 
@@ -842,7 +839,7 @@
 <div style="display: none;" id="m-profile-male-photo-album" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -890,7 +887,7 @@
 <div style="display: none;" id="m-profile-male-photo-album-moderation" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
 
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
@@ -1269,7 +1266,7 @@
             var element   = event.target;
             var items     = event.item.count;
             var item      = event.item.index + 1;
-            $('#m-slide-counter').html(item + " из " + items);
+            $('.m-slide-counter').html(item + " из " + items);
         }
     });
 
@@ -1287,10 +1284,10 @@
     // chars counter
     $( function() {
         var maxLength = 500;
-        $('textarea').keyup(function() {
+        $('.js-textarea-max-chars-500').keyup(function() {
             var length = $(this).val().length;
-            var length = length;
-            $('#chars').text(length);
+            // var length = length;
+            $('.js-chars').text(length);
         });
     });
 

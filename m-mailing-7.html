@@ -623,7 +623,7 @@
 <div style="display: none;" id="m-profile-male-photo-album" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -671,7 +671,7 @@
 <div style="display: none;" id="m-profile-male-photo-album-moderation" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
 
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
@@ -1050,7 +1050,7 @@
             var element   = event.target;
             var items     = event.item.count;
             var item      = event.item.index + 1;
-            $('#m-slide-counter').html(item + " из " + items);
+            $('.m-slide-counter').html(item + " из " + items);
         }
     });
 
@@ -1068,10 +1068,10 @@
     // chars counter
     $( function() {
         var maxLength = 500;
-        $('textarea').keyup(function() {
+        $('.js-textarea-max-chars-500').keyup(function() {
             var length = $(this).val().length;
-            var length = length;
-            $('#chars').text(length);
+            // var length = length;
+            $('.js-chars').text(length);
         });
     });
 

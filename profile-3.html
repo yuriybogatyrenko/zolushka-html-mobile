@@ -63,9 +63,8 @@
         </div>
     </nav>
 
-</header>    <div style="display: block;" class="m-profile profile-female-status-photo-main-empty">
-    <div class="container">
-        <div class="fw-padding-15">
+</header>    <div class="m-profile profile-female-status-photo-main-empty">
+        <div class="fw-pt-15 container">
             <div class="m-profile-top-line fw-flex fw-flex-center fw-flex-left">
                 <div class="m-profile-avatar fw-width-80 fw-height-80 fw-relative">
                     <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
@@ -112,7 +111,7 @@
             </div>
         </div>
 
-        <div class="fw-pt-20 fw-pr-15 m-gray-bg fw-pl-15 fw-pb-86 fw-text-center">
+        <div class="container fw-pt-20 m-gray-bg fw-pb-86 fw-text-center">
             <div class="m-profile-empty-photo-wrap fw-pb-20">
                 <div class="icon-wrap fw-margin-auto">
                     <i class="icomoon icomoon-female-status-email fw-fz-26 fw-color-red"></i>
@@ -140,7 +139,6 @@
             </div>
         </div>
     </div>
-</div>
         </div>
 
 
@@ -653,7 +651,7 @@
 <div style="display: none;" id="m-profile-male-photo-album" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto"></div>
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
@@ -701,7 +699,7 @@
 <div style="display: none;" id="m-profile-male-photo-album-moderation" class="m-male-photo-album mobile-popup m-bg-black-overlay fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
     <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 m-overflow-hidden">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-pl-15 fw-flex-left fw-mb-65">
-            <div id="m-slide-counter" class="fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
+            <div class="m-slide-counter fw-color-white fw-fz-16 fw-absolute fw-margin-auto">Основное фото</div>
 
             <div class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
@@ -1080,7 +1078,7 @@
             var element   = event.target;
             var items     = event.item.count;
             var item      = event.item.index + 1;
-            $('#m-slide-counter').html(item + " из " + items);
+            $('.m-slide-counter').html(item + " из " + items);
         }
     });
 
@@ -1098,10 +1096,10 @@
     // chars counter
     $( function() {
         var maxLength = 500;
-        $('textarea').keyup(function() {
+        $('.js-textarea-max-chars-500').keyup(function() {
             var length = $(this).val().length;
-            var length = length;
-            $('#chars').text(length);
+            // var length = length;
+            $('.js-chars').text(length);
         });
     });
 
