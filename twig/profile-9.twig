@@ -2,8 +2,8 @@
 
 {% block profile %}
 <div class="m-profile profile-female-status-photo-main-empty">
-    <div class="container">
-        <div class="m-overflow-hidden">
+    {#<div class="container">#}
+        <div class="container fw-pt-15 m-overflow-hidden">
             <span class="fw-block fw-fz-14 fw-color-gray-light fw-pb-15">Основное фото</span>
             <div class="m-profile-top-line fw-flex fw-flex-center fw-flex-space-between">
                 <div class="m-profile-avatar fw-width-80 fw-height-80 fw-relative">
@@ -67,7 +67,7 @@
         </div>
 
                 <form class="m-reg_form registration-form no-mt ng-pristine ng-valid" method="POST">
-                    <div class="m-profile-main-info m-overflow-hidden">
+                    <div class="container m-profile-main-info m-overflow-hidden">
                         <span class="fw-fz-14 fw-color-gray-light fw-block fw-pb-15 fw-pt-25">Основная информация</span>
                         <div class="line_wrap fw-flex clearfix fw-mb-8">
                             <div class="name_input_wrap fw-pr-10">
@@ -280,7 +280,6 @@
                     </button>
                 </form>
             </div>
-    </div>
 
 {% endblock %}
 
