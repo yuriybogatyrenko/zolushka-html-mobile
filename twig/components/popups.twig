@@ -669,6 +669,15 @@
 
 
 <script>
+
+    //owl  sliders
+    $('.js-wallet-premium-slider').owlCarousel({
+        items: 1,
+        loop: false,
+        nav: false,
+        dots: true,
+    });
+
     // range slider tooltip
     $('#age_slider').change(function () {
         var ageValue = $(".age_slider .slider .tooltip-inner").text().replace(":", "-").slice(0,7);
@@ -777,15 +786,21 @@
     });
 
     // скрипт для просмотра попапов на странице POPUPS_EXAMPLES
-        // open popup
-        $('.js-view-mobile-popup-btn').on('click', function () {
-            var dataPopup = $(this).attr('data-call-popup');
-            $(dataPopup).show();
-        });
+    // open popup
+    $('.js-view-mobile-popup-btn').on('click', function () {
+        var dataPopup = $(this).attr('data-call-popup');
+        $(dataPopup).show();
+    });
 
-        // hide popup
-        $('.js-m-btn-close-pop').on('click',function () {
-            $('.mobile-popup').hide();
-        });
+    // hide popup
+    $('.js-m-btn-close-pop').on('click',function () {
+        $('.mobile-popup').hide();
+    });
+
+    // show/hide DTC balances
+
+    $('.js-show-DTC-balances').on('click', function () {
+       $('.js-dtc-balances').toggleClass('fw-hidden');
+    });
 
 </script>

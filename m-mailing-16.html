@@ -212,7 +212,76 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.0/min/inputmask/inputmask.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.0/min/inputmask/jquery.inputmask.min.js"></script>
 
+<script src="/web/js/clipboard.min.js"></script>
+
 <script>
+    
+    new ClipboardJS('.js-copy-dtc-address');
+    $('.js-copy-dtc-address').on('click', function () {
+       $(this).text(function () {
+           return 'Скопировано';
+       });
+    });
+    
+    // DTC-accordeon
+    $(function DtcAccordeon(){
+        $('.js-dtc-accordeon .js-dtc-acc-head').on('click', f_acc);
+
+        function f_acc(){
+            $(this).toggleClass('head-accordeon-active');
+            $('.js-dtc-accordeon .js-dtc-acc-body').not($(this).next()).slideUp(300);
+            $('.js-dtc-acc-head').not($(this)).removeClass('head-accordeon-active');
+            $(this).next().slideToggle(300);
+        }
+    });
+
+    //_______________________________
+
+    // Premium
+    $(function BuyPremium() {
+       var PremiumPriceText = $('.js-buy-premium-price');
+       var PremiumDTCpriceText = $('.premium-dtc-price-text');
+       var DTCbtn = $('.js-buy-premium-for-dtc-btn');
+       var RubBtn = $('.js-buy-premium-btn');
+       var ConvertDTC = $('.js-convert-dtc');
+       var BuyFor4000DTC = $('.js-buy-premium-for-dtc').val();
+
+       $('.js-buy-premium-for-dtc').on('click', function () {
+           $(RubBtn).addClass('fw-hidden');
+           $(DTCbtn).removeClass('fw-hidden');
+
+           $(PremiumDTCpriceText).text(function () {
+               return BuyFor4000DTC;
+           });
+
+           $(ConvertDTC).text(function () {
+               return BuyFor4000DTC * 1007;
+           });
+       });
+
+       $('.js-premium-radio-input').on('click', function () {
+          var PremiumPrice = $(this).val();
+          var DTC = $(this).attr('data-dtc-val');
+
+          $(DTCbtn).removeClass('fw-hidden');
+          $(DTCbtn).addClass('fw-mt-15');
+          $(RubBtn).removeClass('fw-hidden');
+
+          $(PremiumDTCpriceText).text(function () {
+             return DTC;
+          });
+
+           $(ConvertDTC).text(function () {
+               return DTC * 1007;
+           });
+
+          $(PremiumPriceText).text(function () {
+              return PremiumPrice;
+          });
+       });
+    });
+    //______________________________________-
+
     $(document).bind('mobileinit', function () {
         var silentScroll = $.mobile.silentScroll;
 
@@ -1025,6 +1094,15 @@
 
 
 <script>
+
+    //owl  sliders
+    $('.js-wallet-premium-slider').owlCarousel({
+        items: 1,
+        loop: false,
+        nav: false,
+        dots: true,
+    });
+
     // range slider tooltip
     $('#age_slider').change(function () {
         var ageValue = $(".age_slider .slider .tooltip-inner").text().replace(":", "-").slice(0,7);
@@ -1133,16 +1211,22 @@
     });
 
     // скрипт для просмотра попапов на странице POPUPS_EXAMPLES
-        // open popup
-        $('.js-view-mobile-popup-btn').on('click', function () {
-            var dataPopup = $(this).attr('data-call-popup');
-            $(dataPopup).show();
-        });
+    // open popup
+    $('.js-view-mobile-popup-btn').on('click', function () {
+        var dataPopup = $(this).attr('data-call-popup');
+        $(dataPopup).show();
+    });
 
-        // hide popup
-        $('.js-m-btn-close-pop').on('click',function () {
-            $('.mobile-popup').hide();
-        });
+    // hide popup
+    $('.js-m-btn-close-pop').on('click',function () {
+        $('.mobile-popup').hide();
+    });
+
+    // show/hide DTC balances
+
+    $('.js-show-DTC-balances').on('click', function () {
+       $('.js-dtc-balances').toggleClass('fw-hidden');
+    });
 
 </script>
 
