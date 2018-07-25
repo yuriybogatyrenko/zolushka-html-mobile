@@ -1,0 +1,34 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-mailing-main-wrapper fw-bg-color-gray3 m-mailing-100vh-gray">
+    <div class="container fw-no-padding">
+        <nav class="m-mailing-menu fw-width-1-1 fw-bg-color-gray2 fw-pt-15 fw-pb-15">
+            <ul class="fw-margin-auto fw-flex fw-flex-center fw-padding-0 fw-flex-middle fw-list-style-none">
+                <li><a class="fw-width-90 fw-flex fw-flex-middle fw-flex-center fw-bg-color-white fw-height-30 mailing-purple-hover fw-block fw-border-radius-3 fw-fz-14" href="#">Все</a></li>
+                <li><a class="fw-width-90 fw-flex fw-flex-middle fw-flex-center fw-bg-color-white fw-height-30 mailing-purple-hover fw-block fw-border-radius-3 fw-ml-10 fw-fz-14" href="#">Интересы</a></li>
+                <li><a class="fw-width-90 fw-flex fw-flex-middle fw-flex-center fw-bg-color-white fw-height-30 mailing-purple-hover fw-block fw-border-radius-3 fw-ml-10 fw-fz-14" href="#">Мои</a></li>
+            </ul>
+        </nav>
+
+        {# create mailing #}
+        <div class="fw-width-1-1 fw-bg-color-gray3 fw-pt-10 fw-height-1-1">
+            <div class="m-create-mailing mailing-block-border-top-bottom fw-bg-color-white fw-width-1-1 fw-pt-10 fw-pb-10 fw-pl-15 fw-pr-15 fw-mb-10 fw-flex fw-flex-middle">
+               <div class="fw-min-width-40">
+                   <a href="#" class="fw-width-40 fw-height-40 fw-border-radius-percent-50 fw-flex fw-flex-middle fw-flex-center fw-bg-color-purple2"><i class="fw-color-white fw-fz-30 icomoon icomoon-plus"></i></a>
+               </div>
+
+                <div class="fw-pl-15 fw-ml-5">
+                    <span class="fw-fz-16 fw-color-purple2 fw-block fw-pb-5">Создать рассылку</span>
+                    <p class="fw-fz-14 fw-color-gray-light">Мгновенно найдите девушек для своих целей – не тратьте время на изучение анкет и переписку</p>
+                </div>
+            </div>
+        </div>
+        {# end #}
+
+    </div>
+</div>
+{% endblock %}
+
+
+
