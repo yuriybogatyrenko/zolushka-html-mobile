@@ -238,6 +238,7 @@
 <script src="/web/js/clipboard.min.js"></script>
 
 <script>
+
     
     new ClipboardJS('.js-copy-dtc-address');
     $('.js-copy-dtc-address').on('click', function () {
@@ -245,7 +246,7 @@
            return 'Скопировано';
        });
     });
-    
+
     // DTC-accordeon
     $(function DtcAccordeon(){
         $('.js-dtc-accordeon .js-dtc-acc-head').on('click', f_acc);
@@ -258,9 +259,16 @@
         }
     });
 
-    //_______________________________
+    // show/hide DTC balances
+    $('.js-show-DTC-balances').on('click', function () {
+        $('.js-dtc-balances').toggleClass('fw-hidden');
 
-    // Premium
+        $('.js-wallet-balance-text').text(function (i, text) {
+            return text === "Баланс" ? "Баланс кошелька" : "Баланс";
+        });
+    });
+
+    // Premium DTC
     $(function BuyPremium() {
        var PremiumPriceText = $('.js-buy-premium-price');
        var PremiumDTCpriceText = $('.premium-dtc-price-text');
@@ -303,7 +311,7 @@
           });
        });
     });
-    //______________________________________-
+    //______________________________________
 
     $(document).bind('mobileinit', function () {
         var silentScroll = $.mobile.silentScroll;
@@ -1116,9 +1124,66 @@
 
 
 
+
+<div id="wallet-premium" class="mobile-popup fw-hidden bg-black-overlay  block-male-photo-main-change fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
+    <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-flex-center">
+        <div class="block-male-photo-main-delete-buttons bg-white fw-max-width-270 fw-width-1-1 fw-margin-auto fw-border-radius-3">
+            <p class="fw-fz-16 fw-pt-20 ffr fw-text-center">Недостаточно средств</p>
+            <p class="fw-pt-5 fw-pb-25 fw-text-center fw-color-gray-light fw-margin-0">Пополните баланс DTC и <br> повторите попытку</p>
+            <div class="buttons-line fw-flex fw-flex-space-between fw-flex-middle">
+                <button class="js-m-btn-close-pop fw-pl-20 fw-fz-16 fw-pt-17 fw-pb-17 fw-block fw-width-1-1 fw-color-purple bg-white fw-text-left">Отмена</button>
+                <button class="fw-pr-20 fw-fz-16 fw-pt-17 fw-pb-17 fw-block fw-width-1-1 fw-color-purple bg-white fw-text-right">Пополнить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="service-purchased" class="mobile-popup fw-hidden bg-black-overlay profile-male-photo-main-delete block-male-photo-main-change fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
+    <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-flex-center">
+        <div class="m-close-popup fw-pr-20 fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-flex-right">
+            <div class="close-popup-btn js-m-btn-close-pop fw-relative">
+                <span class="new-profile__close--close-load fw-relative"></span>
+            </div>
+        </div>
+
+        <div class="fw-flex fw-flex-column fw-text-center fw-flex-center">
+            <i class="icomoon icomoon-check fw-fz-63 fw-color-purple"></i>
+            <p class="fw-pb-25 fw-fz-20 fw-pt-20 ffr fw-text-center fw-fz-14 fw-margin-0 fw-color-white">
+                Услуга куплена
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="promo-dtc" class="mobile-popup fw-hidden bg-black-overlay profile-male-photo-main-delete block-male-photo-main-change fw-fixed fw-left-0 fw-top-0 fw-width-1-1 fw-flex fw-flex-middle fw-flex-center">
+    <div class="m-popup-content fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-height-1-1 fw-flex fw-flex-middle fw-flex-center">
+        <div class="promo-dtc-popup bg-white fw-mr-25 fw-ml-25 fw-width-1-1 fw-relative fw-margin-auto fw-border-radius-3">
+            <div class="m-close-popup fw-pr-15 fw-absolute fw-top-0 fw-left-0 fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-flex-left fw-pl-15">
+                <div class="close-popup-btn js-m-btn-close-pop fw-relative">
+                    <span class="new-profile__close--close-load fw-relative"></span>
+                </div>
+            </div>
+
+            <div class="fw-flex fw-flex-center fw-flex-middle fw-text-center fw-flex-column fw-width-1-1 fw-pl-15 fw-pr-15">
+                <img src="/web/images/DTC/logo_dtc.svg" class="fw-width-80 fw-mt-40" alt="">
+
+                <p class="fw-fz-22 fw-pt-15 fw-text-600 ffr">Оплачивайте опции <br>токенами DTC c <br> выгодой до 50% </p>
+                <p class="fw-fz-16 fw-mb-0 ffr">А так же получите доступ к <br> уникальным услугам</p>
+
+                <a href="#"  class="fw-width-1-1 fw-block fw-mb-10 fw-relative m-purple-btn fw-fz-16 fw-pt-9 fw-pb-9 fw-color-white fw-text-center fw-margin-0 fw-border-radius-3 fw-mt-30">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script>
 
-    //owl  sliders
+    //wallet-premium-slider
     $('.js-wallet-premium-slider').owlCarousel({
         items: 1,
         loop: false,
@@ -1243,12 +1308,6 @@
     // hide popup
     $('.js-m-btn-close-pop').on('click',function () {
         $('.mobile-popup').hide();
-    });
-
-    // show/hide DTC balances
-
-    $('.js-show-DTC-balances').on('click', function () {
-       $('.js-dtc-balances').toggleClass('fw-hidden');
     });
 
 </script>

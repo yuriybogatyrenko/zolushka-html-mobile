@@ -104,6 +104,7 @@
 <script src="/web/js/clipboard.min.js"></script>
 {# / #}
 <script>
+
     {#  COPY DTC ADDRESS #}
     new ClipboardJS('.js-copy-dtc-address');
     $('.js-copy-dtc-address').on('click', function () {
@@ -111,7 +112,7 @@
            return 'Скопировано';
        });
     });
-    {# _____________________ #}
+
     // DTC-accordeon
     $(function DtcAccordeon(){
         $('.js-dtc-accordeon .js-dtc-acc-head').on('click', f_acc);
@@ -124,9 +125,16 @@
         }
     });
 
-    //_______________________________
+    // show/hide DTC balances
+    $('.js-show-DTC-balances').on('click', function () {
+        $('.js-dtc-balances').toggleClass('fw-hidden');
 
-    // Premium
+        $('.js-wallet-balance-text').text(function (i, text) {
+            return text === "Баланс" ? "Баланс кошелька" : "Баланс";
+        });
+    });
+
+    // Premium DTC
     $(function BuyPremium() {
        var PremiumPriceText = $('.js-buy-premium-price');
        var PremiumDTCpriceText = $('.premium-dtc-price-text');
@@ -169,7 +177,7 @@
           });
        });
     });
-    //______________________________________-
+    //______________________________________
 
     $(document).bind('mobileinit', function () {
         var silentScroll = $.mobile.silentScroll;

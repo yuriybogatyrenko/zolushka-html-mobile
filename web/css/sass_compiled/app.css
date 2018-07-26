@@ -3682,4 +3682,12 @@ button {
   background-color: #F2D2F5 !important;
 }
 
+.promo-dtc-popup {
+  background-image: url("/web/images/DTC/popup-bg.png");
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=app.css.map */
