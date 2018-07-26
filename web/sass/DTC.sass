@@ -1,0 +1,37 @@
+.dtc-head-row
+	transform: rotate(-90deg)
+	transition: all .3s ease
+
+.dtc-accordeon
+	position: relative
+	&:last-child
+		border-bottom: none
+	&--head
+		&:not(.head-accordeon-active)
+			span
+				transform: rotate(90deg)
+
+
+.gender-input:checked + .radio-gender-label
+	border-color: $colorPurple
+
+.radio-gender-label
+	transition: 500ms all
+	cursor: pointer
+
+.wallet-premium-slider
+	.owl-item img
+		width: 44px !important
+
+	.owl-dots
+		display: block !important
+		margin: 0 !important
+		.owl-dot.active span
+			background-color: $colorPink !important
+
+.promo-dtc-popup
+	background-image: url('/web/images/DTC/popup-bg.png')
+	-webkit-background-size: 100%
+	background-size: 100%
+	background-position: top
+	background-repeat: no-repeat

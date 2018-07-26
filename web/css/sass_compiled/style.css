@@ -1,4 +1,3 @@
-@import url(fonts.css);
 .dib {
   display: inline-block;
   vertical-align: middle;
@@ -132,6 +131,38 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-block {
   display: block;
+}
+
+.fw-bg-color-pink {
+  background-color: #F2D2F5;
+}
+
+.fw-color-pink {
+  color: #F2D2F5;
+}
+
+.fw-bg-color-gray-btn {
+  background-color: #F3EDF4;
+}
+
+.fw-color-gray-btn {
+  color: #F3EDF4;
+}
+
+.fw-bg-color-gray4 {
+  background-color: #e7e7e7;
+}
+
+.fw-color-gray4 {
+  color: #e7e7e7;
+}
+
+.fw-bg-color-black {
+  background-color: #000000;
+}
+
+.fw-color-black {
+  color: #000000;
 }
 
 .fw-bg-color-blue-light {
@@ -272,6 +303,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-max-width-0 {
   max-width: 0px;
+}
+
+.fw-width-20 {
+  width: 20px;
+}
+
+.fw-max-width-20 {
+  max-width: 20px;
 }
 
 .fw-width-22 {
@@ -2249,6 +2288,22 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 60%;
 }
 
+.fw-border-color-pink {
+  border-color: #F2D2F5;
+}
+
+.fw-border-color-gray-btn {
+  border-color: #F3EDF4;
+}
+
+.fw-border-color-gray4 {
+  border-color: #e7e7e7;
+}
+
+.fw-border-color-black {
+  border-color: #000000;
+}
+
 .fw-border-color-blue-light {
   border-color: #48abff;
 }
@@ -2674,6 +2729,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .fw-opacity-4 {
   opacity: 0.4;
+}
+
+.fw-no-padding {
+  padding: 0 !important;
 }
 
 button {
@@ -3235,10 +3294,6 @@ button {
   border-bottom: 1px solid #e7e7e7;
 }
 
-.fw-no-padding {
-  padding: 0 !important;
-}
-
 .fw-white-btn-border {
   border: solid 2px #d8d9d8;
 }
@@ -3420,6 +3475,49 @@ button {
 }
 .m-mailing-main-wrapper .mailing-z-index-list li:nth-child(0) {
   left: 0;
+}
+
+.dtc-head-row {
+  transform: rotate(-90deg);
+  transition: all 0.3s ease;
+}
+
+.dtc-accordeon {
+  position: relative;
+}
+.dtc-accordeon:last-child {
+  border-bottom: none;
+}
+.dtc-accordeon--head:not(.head-accordeon-active) span {
+  transform: rotate(90deg);
+}
+
+.gender-input:checked + .radio-gender-label {
+  border-color: #ba78c0;
+}
+
+.radio-gender-label {
+  transition: 500ms all;
+  cursor: pointer;
+}
+
+.wallet-premium-slider .owl-item img {
+  width: 44px !important;
+}
+.wallet-premium-slider .owl-dots {
+  display: block !important;
+  margin: 0 !important;
+}
+.wallet-premium-slider .owl-dots .owl-dot.active span {
+  background-color: #F2D2F5 !important;
+}
+
+.promo-dtc-popup {
+  background-image: url("/web/images/DTC/popup-bg.png");
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 body {

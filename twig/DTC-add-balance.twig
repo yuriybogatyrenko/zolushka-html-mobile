@@ -1,0 +1,25 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-mailing-main-wrapper m-mailing-100vh-gray">
+    <div class="container">
+        <h2 class="fw-fz-16 fw-text-600 fw-color-black ffr fw-text-center fw-mt-25 fw-mb-10">
+            Оплачивайте опции токенами DTC c выгодой 50%, а так же получите доступ к уникальным услугам
+        </h2>
+
+        <p class="fw-fz-12 fw-text-center ffr">Чтобы пополнить баланс DTC в приложении,<br> переведите DTC со своего ETH кошелька на этот <br> адрес:</p>
+
+        <div class="fw-width-120 fw-height-120 fw-margin-auto">
+            <img src="/web/images/DTC/qr.png" class="fw-width-1-1 fw-height-1-1" alt="">
+        </div>
+
+        <p id="dtc-address" class="fw-mt-15 fw-text-600 ffr fw-fz-14 fw-text-center">1GZcSFw3onsfusWBqvTZSCg5BTiQXYpS3h</p>
+
+        <a href="#" data-clipboard-target="#dtc-address" class="js-copy-dtc-address fw-width-1-1 fw-block fw-mb-10 fw-relative m-purple-btn fw-fz-16 fw-pt-9 fw-pb-9 fw-color-white fw-text-center fw-margin-0 fw-border-radius-3 fw-mt-30">Скопировать адрес</a>
+        <a href="#" class="fw-mb-15 fw-white-btn-border fw-border-radius-3 fw-pointer fw-fz-14 fw-width-1-1 fw-flex fw-flex-center fw-flex-middle fw-color-purple2 fw-height-40">Как купить DTC?</a>
+    </div>
+</div>
+{% endblock %}
+
+
+

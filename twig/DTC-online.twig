@@ -1,0 +1,30 @@
+{% extends 'layout/layout.twig' %}
+
+{% block profile %}
+<div class="m-mailing-main-wrapper m-mailing-100vh-gray">
+    <div class="container fw-pt-35">
+        <img src="/web/images/DTC/online.png" class="fw-block fw-margin-auto" alt="">
+
+        <p class="fw-mb-20 fw-mt-10 ffr fw-fz-14">
+            Вы можете узнать кто сейчас на сайте и готов к общению. Это позволит отсечь анкеты тех девушек, кто давно не заходили на сайт
+            или находится в оффлайн режиме
+        </p>
+
+        <form action="">
+            <div class="line_wrap">
+                <select class="selectpicker display_block gray_select_style service-select">
+                    <option value="1">1 час</option>
+                    <option value="2">3 дня</option>
+                    <option value="3">2 недели</option>
+                </select>
+            </div>
+
+            <button type="submit" class="fw-mt-10 fw-width-1-1 fw-block fw-relative m-purple-btn fw-fz-16 fw-pt-9 fw-pb-9 fw-color-white fw-text-center fw-margin-0 fw-border-radius-3">Купить за <span class="">2890 Р</span></button>
+            <button type="submit" class="fw-mt-13 fw-border-color-gray-btn fw-bg-color-gray-btn fw-border-radius-3 fw-pointer fw-fz-14 fw-width-1-1 fw-flex fw-flex-center fw-flex-middle fw-color-purple2 fw-height-40"><img src="/web/images/DTC/logo_dtc.svg" class="fw-width-20 fw-height-20 fw-mr-10" alt=""> Купить за &nbsp;<span class="">2</span>&nbsp; DTC ≈ &nbsp;<span class="">2014</span>&nbsp; Р</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+

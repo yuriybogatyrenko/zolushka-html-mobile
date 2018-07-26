@@ -3,28 +3,204 @@
 {% block profile %}
 <div class="m-mailing-main-wrapper fw-bg-color-gray3 m-mailing-100vh-gray">
     <div class="container fw-no-padding">
-        <nav class="m-mailing-menu fw-width-1-1 fw-bg-color-gray2 fw-pt-15 fw-pb-15">
-            <ul class="fw-margin-auto fw-flex fw-flex-center fw-padding-0 fw-flex-middle fw-list-style-none">
-                <li><a class="fw-width-90 fw-flex fw-flex-middle fw-flex-center fw-bg-color-white fw-height-30 mailing-purple-hover fw-block fw-border-radius-3 fw-fz-14" href="#">Все</a></li>
-                <li><a class="fw-width-90 fw-flex fw-flex-middle fw-flex-center fw-bg-color-white fw-height-30 mailing-purple-hover fw-block fw-border-radius-3 fw-ml-10 fw-fz-14" href="#">Интересы</a></li>
-                <li><a class="fw-width-90 fw-flex fw-flex-middle fw-flex-center fw-bg-color-white fw-height-30 mailing-purple-hover fw-block fw-border-radius-3 fw-ml-10 fw-fz-14" href="#">Мои</a></li>
-            </ul>
-        </nav>
+        <div class="wallet_page_block">
+            <div class="ballance_block">
+                <div class="container">
+                    <div class="row fw-flex fw-flex-middle">
+                        <div class="col-xs-7 right_padding5">
+                            <div class="wallet_info">
+                                <span class="icon icon-wallet"></span>
 
-        {# create mailing #}
-        <div class="fw-width-1-1 fw-bg-color-gray3 fw-pt-10 fw-height-1-1">
-            <div class="m-create-mailing mailing-block-border-top-bottom fw-bg-color-white fw-width-1-1 fw-pt-10 fw-pb-10 fw-pl-15 fw-pr-15 fw-mb-10 fw-flex fw-flex-middle">
-               <div class="fw-min-width-40">
-                   <a href="#" class="fw-width-40 fw-height-40 fw-border-radius-percent-50 fw-flex fw-flex-middle fw-flex-center fw-bg-color-purple2"><i class="fw-color-white fw-fz-30 icomoon icomoon-plus"></i></a>
-               </div>
+                                <div class="js-show-DTC-balances text ffr fw-pointer">
+                                    <p class="js-wallet-balance-text">Баланс</p>
+                                    <p class="money"><span class="current-balance">0.00</span> Р</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 left_padding5">
+                            <a href="/payment" class="red_btn db">Пополнить</a>
+                        </div>
+                    </div>
+                    {# DTC BALANCES #}
+                    <div class="js-dtc-balances row fw-hidden fw-pt-20 fw-flex fw-flex-middle">
+                        <div class="col-xs-7 right_padding5">
+                            <div class="wallet_info">
+                                <span class="icon icon-wallet"></span>
 
-                <div class="fw-pl-15 fw-ml-5">
-                    <span class="fw-fz-16 fw-color-purple2 fw-block fw-pb-5">Создать рассылку</span>
-                    <p class="fw-fz-14 fw-color-gray-light">Мгновенно найдите девушек для своих целей – не тратьте время на изучение анкет и переписку</p>
+                                <div class="text ffr">
+                                    <p>Баланс токенов</p>
+
+                                    <p class="money"><span class="current-balance">4000</span> DTC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 left_padding5">
+                            <a href="/payment" class="red_btn db">Пополнить</a>
+                        </div>
+                    </div>
+                    {# / #}
+                </div>
+            </div>
+            {# new DTC premiu, #}
+            <div class="fw-padding-15">
+                <a href="#" class="fw-padding-15 fw-border-width-1 fw-border-style-solid fw-border-color-gray4 fw-flex fw-flex-middle fw-width-1-1 fw-border-radius-5 fw-bg-color-white">
+                    <img class="fw-width-40 fw-height-40" src="/web/images/DTC/logo_dtc.svg" alt="">
+                    <div class="fw-ml-15">
+                        <p class="fw-fz-16 fw-mb-5 ffr fw-color-black">
+                            Купить премиум и опции <br>
+                            со скидкой до 50%
+                        </p>
+                        <p class="fw-fz-14 fw-margin-0 ffr fw-color-gray-light">Оплата токенами DTC</p>
+                    </div>
+                </a>
+            </div>
+            {# / #}
+
+            <div class="wallet_navigation">
+                <div class="field_group_units">
+                    <div class="field_group_title">
+                        <div class="container">
+                            <div class="row ffr">
+                                <div class="col-xs-6 group_name">Анкета</div>
+                                <div class="col-xs-6 text-right profile_place ffr">16785
+                                    место
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="field_group_units">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Промокоды</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <a href="/payment/promo-code" class="db fw-pl-15 fw-pr-15 red_btn green">Активировать</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Премиум</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <p>
+                                            <a href="/payment/premium" class="db red_btn green">Купить</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Поднятие в ТОП</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <a href="/payment/top-elevated" class="db red_btn">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Минуты</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <a href="/calls" class="db red_btn">Купить</a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p class="active_time_left text-right">
+                                            <span class="gray">Осталось</span>
+                                            <span class="the_time"> 3 минут</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Контакты</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <p>
+                                            <a href="/payment/contacts" class="db red_btn green">Купить</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p class="active_time_left text-right">
+                                            <span class="gray">Осталось</span>
+                                            <span class="the_time">10</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Кто онлайн</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <a href="/payment/online" class="db red_btn">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Скрыть статус онлайн</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <p>
+                                            <a href="/payment/invisible" class="db red_btn">Купить</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Подтвержденные</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <p>
+                                            <a href="/payment/confirmed" class="db red_btn">Купить</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-8 product_name ffr right_padding5">
+                                        <p>Закрепление в ТОП</p>
+                                    </div>
+                                    <div class="col-xs-4 left_padding5 text-right">
+                                        <a href="/payment/top-fixed" class="db red_btn">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        {# end #}
 
     </div>
 </div>
