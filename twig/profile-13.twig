@@ -1,0 +1,38 @@
+{% extends 'layout/layout.twig' %}
+
+{% block album %}
+
+        <form class="fw-relative fw-text-left fw-relative">
+            <div class="container fw-100vh-116px fw-pt-20 fw-font-futura">
+                <p class="fw-fz-22 fw-mb-20 fw-line-height-25">Добавьте фотографии в альбом</p>
+                <div class="m-profile-album">
+                    <span class="m-profile-album-title fw-block fw-fz-14 fw-line-height-18 fw-mb-20 fw-color-gray-light">Фотоальбом</span>
+
+                    <div class="fw-flex fw-flex-middle fw-flex-left fw-width-1-1">
+                        <div class="m-profile-album-slider--slide fw-block fw-ml-5 fw-min-width-90 fw-height-90 fw-border-radius-3">
+                            <label class="load-field-label fw-border-radius-3 fw-width-1-1 fw-height-1-1 fw-relative fw-flex fw-flex-center fw-flex-middle">
+                                <span class="icomoon icomoon-photo-plus fw-fz-30 fw-color-purple"></span>
+                                <input id="slider-load-img-input" class="m-load-avatar-input" type="file" accept="image/*">
+                                <span class="loader"></span>
+                            </label>
+                        </div>
+
+                        <p class="fw-pl-15 fw-color-gray-light fw-fz-12 fw-line-height-16">
+                            Фотографии будут доступны только зарегистрированным пользователям
+                        </p>
+                    </div>
+                </div>
+
+                <a href="/profile-11.html" class="fw-block fw-mt-30 fw-mb-30 fw-color-btn-purple fw-fz-14 fw-line-height-16">Правила размещения фото</a>
+            </div>
+
+            <button class="fw-width-1-1 fw-block fw-bottom-0 fw-left-0 m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white fw-text-center fw-margin-0">
+                Продолжить
+            </button>
+        </form>
+
+
+{% endblock %}
+
+
+

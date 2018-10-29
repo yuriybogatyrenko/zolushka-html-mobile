@@ -14,6 +14,9 @@
   .fw-max-width-#{$value}
     max-width: #{$value}px
 
+  .fw-min-width-#{$value}
+    min-width: #{$value}px
+
 @each $value in $width_grid
   .fw-width-#{nth($value, 1)}-#{nth($value, 2)}
     width: nth($value,1) / nth($value,2) * 100%
