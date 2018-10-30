@@ -550,8 +550,8 @@
   max-height: 100%;
 }
 
-.fw-100vh-116px {
-  min-height: calc(100vh - 116px);
+.fw-100vh-112px {
+  min-height: calc(100vh - 112px);
 }
 
 .fw-height-1-1 {
