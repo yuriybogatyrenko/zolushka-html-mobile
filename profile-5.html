@@ -360,7 +360,7 @@
 <div id="female-main-photo-popup" class="mobile-popup fw-hidden main-photo-popup fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
     <div class="m-popup-content fw-text-center fw-pr-15 fw-pl-15">
         <div class="m-close-popup fw-relative fw-width-1-1 fw-pb-30 fw-pt-17 fw-flex fw-flex-right">
-            <div class="close-popup-btn js-m-btn-close-pop fw-relative">
+            <div data-close-popup="#female-main-photo-popup" class="close-popup-btn js-m-btn-close-pop fw-relative">
                 <span class="new-profile__close--close-load fw-relative"></span>
             </div>
         </div>
@@ -1105,6 +1105,81 @@
 </div>
 
 
+
+
+<div id="verify-photo-stage1" class="mobile-popup fw-hidden photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-height-100vh-min-50 fw-text-center fw-pr-15 fw-pl-15">
+        <div class="fw-relative fw-width-1-1 fw-pt-35 fw-pb-25">
+            <h3 class="fw-fz-20 fw-mt-0 fw-mb-15">Подтвердите фото</h3>
+            <p class="fw-fz-14 fw-line-height-18 fw-margin-0">Сфотографируйтесь в такой же позе, как человек на фото</p>
+        </div>
+
+        <div class="m-popup-block-image fw-margin-auto fw-width-140 fw-height-140 fw-relative">
+            <img src="/web/images/verify-female-photo.png" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+        </div>
+
+        <p class="fw-text-center fw-fz-14 fw-mt-35 fw-color-gray5 fw-line-height-16">Фотография будет нужна только для подтверждения. Она не будет отображаться в вашем альбоме. </p>
+    </div>
+    <button class="fw-width-1-1 fw-min-height-50 fw-flex fw-flex-center fw-flex-middle fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-color-white">Сделать фото</button>
+</div>
+
+
+
+<div id="verify-photo-stage2" class="mobile-popup fw-hidden photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center">
+        <div class="m-popup-block-image fw-margin-auto fw-width-1-1 fw-height-100vh-min-44 fw-relative">
+            <img src="http://placehold.it/200x200" class="fw-width-1-1 fw-object-cover fw-height-1-1" alt="">
+        </div>
+
+        <div class="fw-color-white fw-text-center fw-flex fw-flex-space-between fw-flex-middle fw-border-radius-15 fw-fz-14 fw-bg-color-black fw-pt-12 fw-pb-12 fw-pl-15 fw-pr-15">
+            <button class="fw-reset">Переснять</button>
+            <button class="fw-reset">Использовать</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="verify-photo-stage3" class="mobile-popup fw-hidden photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-text-center fw-flex fw-flex-column fw-flex-middle fw-flex-center fw-height-100vh fw-width-1-1">
+        <div class="fw-width-1-1 fw-pl-15 fw-pr-15">
+            <div class="fw-relative fw-width-1-1 fw-pt-25 fw-pb-25">
+                <h3 class="fw-fz-20 fw-mt-0 fw-mb-15">Спасибо!<br>Ваше фото проверяется.</h3>
+            </div>
+
+            <div class="m-popup-block-image fw-margin-auto fw-width-140 fw-height-140 fw-relative">
+                <img src="/web/images/verify-female-photo.png" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
+                <span class="icomoon icomoon-profile-moderation-pending fw-absolute fw-right-0 fw-bottom-0 fw-fz-40">
+                    <span class="path1"></span><span class="path2"></span>
+                </span>
+            </div>
+
+            <div class="fw-text-center fw-border-radius-15 fw-fz-14 fw-mt-35 fw-bg-color-pale-purple fw-line-height-16 fw-pt-25 fw-pb-20 fw-pl-15 fw-pr-15">
+                <span class="icomoon icomoon-notebook-and-mouse-cursor fw-fz-38">
+                    <span class="path1"></span><span class="path2"></span>
+                </span>
+                <p class="fw-mt-15 fw-fz-14 fw-mb-0">Вернитесь к вашему компьютеру<br>и обновите страницу </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="verify-photo-stage4" class="mobile-popup fw-hidden photo-main-empty fw-fixed fw-left-0 fw-top-0 fw-width-1-1">
+    <div class="m-popup-content fw-width-1-1 fw-height-100vh-min-45 fw-text-center fw-flex fw-flex-column fw-flex-middle fw-flex-center fw-pr-15 fw-pl-15">
+        <div class="fw-width-1-1">
+            <div class="fw-mb-30 fw-width-50 fw-height-50 fw-margin-auto">
+                <img src="/web/images/warning.png" alt="">
+            </div>
+            <h3 class="fw-mt-0 fw-font-futura fw-color-black fw-fz-20 fw-line-height-25 fw-mb-5">Ошибка загрузки</h3>
+            <p class="fw-margin-0 fw-color-gray5 fw-font-futura fw-fz-12">Что-то пошло не так, проверьте<br>соединение с сетью</p>
+        </div>
+    </div>
+    <button class="fw-width-1-1 fw-min-height-45 fw-flex fw-flex-center fw-flex-middle fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-color-white">Повторить</button>
+</div>
+
+
 <script>
 
     //wallet-premium-slider
@@ -1224,15 +1299,37 @@
 
     // скрипт для просмотра попапов на странице POPUPS_EXAMPLES
     // open popup
-    $('.js-view-mobile-popup-btn').on('click', function () {
-        var dataPopup = $(this).attr('data-call-popup');
-        $(dataPopup).show();
+    // popups
+    $(function () {
+        function closePopup() {
+            $('.mobile-popup').addClass('fw-hidden');
+            // $(popupId).addClass('fw-hidden');
+        }
+
+        function openPopup(popupId) {
+            $(popupId).removeClass('fw-hidden');
+        }
+
+        $('.js-view-mobile-popup-btn').on('click', function () {
+            var dataTargetPopup = $(this).attr('data-call-popup');
+            openPopup(dataTargetPopup);
+        });
+
+        $('.js-m-btn-close-pop').on('click', function () {
+            var dataTargetClosePopup = $(this).attr('data-close-popup');
+            closePopup();
+        });
     });
 
-    // hide popup
-    $('.js-m-btn-close-pop').on('click',function () {
-        $('.mobile-popup').hide();
-    });
+    // $('.js-view-mobile-popup-btn').on('click', function () {
+    //     var dataPopup = $(this).attr('data-call-popup');
+    //     $(dataPopup).show();
+    // });
+    //
+    // // hide popup
+    // $('.js-m-btn-close-pop').on('click',function () {
+    //     $('.mobile-popup').hide();
+    // });
 
 </script>
 
