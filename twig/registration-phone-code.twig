@@ -1,0 +1,31 @@
+{% extends 'layout/layout.twig' %}
+
+{% block album %}
+        <div class="m-popup-content m-100vh m-validate-phone-number fw-relative fw-text-center fw-relative">
+            <div class="container">
+                <h3 class="fw-fz-20 fw-line-height-25 fw-mt-25 fw-mb-25 fw-text-left fw-mb-25">Введите код из SMS</h3>
+            </div>
+
+            <form action="#" class="posr m-validate-phone-form" data-validate-form="empty">
+                <div class="container">
+                    <div class="form-line mb20 mb15 posr fw-flex fw-flex-middle fw-flex-left ">
+                        <input type="text" name="phone" class="fw-height-40 fw-text-center fw-flex-grow-1 fw-mr-10" placeholder="*">
+                        <input type="text" name="phone" class="fw-height-40 fw-text-center fw-flex-grow-1 fw-mr-10" placeholder="*">
+                        <input type="text" name="phone" class="fw-height-40 fw-text-center fw-flex-grow-1 fw-mr-10" placeholder="*">
+                        <input type="text" name="phone" class="fw-height-40 fw-text-center fw-flex-grow-1" placeholder="*">
+                    </div>
+
+                    <p class="fw-mt-20 fw-mb-25 fw-text-left ffr fw-fz-14">Код отправлен на номер +7 (912) 342-46-45</p>
+                    
+                    <div class="fw-flex fw-flex-column">
+                        <button class="fw-mb-15 fw-border-style-solid fw-border-width-2 fw-border-radius-3 fw-bg-color-white fw-border-color-gray fw-width-1-1 fw-block fw-fz-16 fw-pt-12 fw-pb-12 fw-color-purple">Отправить код повторно</button>
+                        <button class="fw-border-style-solid fw-border-width-2 fw-border-radius-3 fw-bg-color-white fw-border-color-gray fw-width-1-1 fw-block fw-fz-16 fw-pt-12 fw-pb-12 fw-color-purple">Указать другой номер</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+{% endblock %}
+
+
+
