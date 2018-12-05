@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lkg76c');
-  src:  url('fonts/icomoon.eot?lkg76c#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lkg76c') format('truetype'),
-    url('fonts/icomoon.woff?lkg76c') format('woff'),
-    url('fonts/icomoon.svg?lkg76c#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?5cfa94');
+  src:  url('fonts/icomoon.eot?5cfa94#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5cfa94') format('truetype'),
+    url('fonts/icomoon.woff?5cfa94') format('woff'),
+    url('fonts/icomoon.svg?5cfa94#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-email:before {
+  content: "\e92b";
+}
 .icomoon-notebook-and-mouse-cursor .path1:before {
   content: "\e929";
   color: rgb(172, 94, 179);

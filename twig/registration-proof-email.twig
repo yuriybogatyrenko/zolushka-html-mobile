@@ -1,0 +1,19 @@
+{% extends 'layout/layout.twig' %}
+
+{% block album %}
+        <form class="m-popup-content m-100vh m-validate-phone-number fw-relative fw-text-center fw-relative">
+            <div class="container">
+                <span class="icomoon icomoon-email fw-color-purple fw-fz-60 fw-mt-62 fw-block"></span>
+                <h3 class="fw-fz-20 fw-line-height-25 fw-mt-20 fw-text-center fw-mb-10">Подтвердите email</h3>
+                <p class="fw-fz-14 fw-line-height-18 fw-mb-20">Для активации анкеты перейдите по ссылке в письме, отправленном на <a href="meilto:info@me.com" class="fw-color-purple">info@me.com</a></p>
+                <p class="fw-fz-14 fw-mb-35 fw-line-height-18">Если вы не получили письмо в течение 30 секунд, проверьте папку “спам”</p>
+                <div class="fw-flex fw-flex-column">
+                    <button class="fw-mb-15 fw-border-style-solid fw-border-width-2 fw-border-radius-3 fw-bg-color-white fw-border-color-gray fw-width-1-1 fw-block fw-fz-16 fw-pt-12 fw-pb-12 fw-color-purple">Продублировать письмо</button>
+                    <button class="fw-border-style-solid fw-border-width-2 fw-border-radius-3 fw-bg-color-white fw-border-color-gray fw-width-1-1 fw-block fw-fz-16 fw-pt-12 fw-pb-12 fw-color-purple">Указать другой email</button>
+                </div>
+            </div>
+        </form>
+{% endblock %}
+
+
+
