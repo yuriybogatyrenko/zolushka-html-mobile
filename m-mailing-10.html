@@ -1116,7 +1116,10 @@
             <p class="fw-text-center fw-fz-14 fw-mb-0 fw-mt-35 fw-color-gray5 fw-line-height-16">Фотография будет нужна только для подтверждения. Она не будет отображаться в вашем альбоме. </p>
         </div>
     </div>
-    <button class="fw-width-1-1 fw-min-height-50 fw-flex fw-flex-center fw-flex-middle fw-absolute fw-bottom-0 m-purple-btn fw-fz-16 fw-color-white">Сделать фото</button>
+    <label class="fw-pointer fw-width-1-1 fw-relative m-purple-btn fw-fz-16 fw-pt-17 fw-pb-17 fw-color-white fw-text-center fw-margin-0">
+        Сделать фото
+        <input class="m-hide fw-hidden" type="file" accept="image/*">
+    </label>
 </div>
 
 
@@ -1142,6 +1145,7 @@
             <div class="fw-relative fw-width-1-1 fw-pt-0 fw-pb-25">
                 <h3 class="fw-fz-20 fw-font-futura fw-line-height-25 fw-mt-0 fw-mb-15">Спасибо!<br>Ваше фото проверяется.</h3>
             </div>
+
 
             <div class="m-popup-block-image fw-margin-auto fw-width-140 fw-height-140 fw-relative">
                 <img src="/web/images/verify-female-photo.png" class="fw-width-1-1 fw-height-1-1 fw-border-radius-percent-50" alt="">
